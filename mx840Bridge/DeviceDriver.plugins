@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+  This file contains the names of the device drivers to be used by the Common API.
+  A file listed here that is not physically present will be ignored and does not produce an error.
+-->
+<Plugins>
+  <DeviceDriver file="Hbm.Api.Mgc.dll" />
+  <DeviceDriver file="Hbm.Api.Pmx.dll" />
+  <DeviceDriver file="Hbm.Api.QuantumX.dll" />
+  <DeviceDriver file="Hbm.Api.VirtualDevice.dll" />
+</Plugins>

@@ -1,0 +1,9 @@
+{
+  "name": "bridge-client",
+  "version": "0.0.0",
+  "description": "bridgeClient",
+  "main": "app.js",
+  "author": {
+    "name": "wmmih"
+  }
+}

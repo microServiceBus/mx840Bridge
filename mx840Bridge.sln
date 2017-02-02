@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mx840Bridge", "mx840Bridge\mx840Bridge.csproj", "{667B8EBC-0400-43C9-93DA-328B3B71D961}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "bridgeClient", "bridgeClient\bridgeClient.njsproj", "{2A032337-94FA-4C6C-AB8B-8B1427AA02F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{BB9F6B70-E9E3-4495-B7FA-77BC1AB46B88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{667B8EBC-0400-43C9-93DA-328B3B71D961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667B8EBC-0400-43C9-93DA-328B3B71D961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667B8EBC-0400-43C9-93DA-328B3B71D961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667B8EBC-0400-43C9-93DA-328B3B71D961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A032337-94FA-4C6C-AB8B-8B1427AA02F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A032337-94FA-4C6C-AB8B-8B1427AA02F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A032337-94FA-4C6C-AB8B-8B1427AA02F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A032337-94FA-4C6C-AB8B-8B1427AA02F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9F6B70-E9E3-4495-B7FA-77BC1AB46B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9F6B70-E9E3-4495-B7FA-77BC1AB46B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9F6B70-E9E3-4495-B7FA-77BC1AB46B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9F6B70-E9E3-4495-B7FA-77BC1AB46B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
