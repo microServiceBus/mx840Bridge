@@ -10,13 +10,13 @@ var invoke = edge.func({
     methodName: 'Invoke'
 });
 
-invoke({ method: "open", host: ip_mx840B, port:port }, function (error, result) {
+invoke({ operation: "open", host: ip_mx840B, port:port }, function (error, result) {
     if (error) {
         console.log("ERROR:" + error.message);
     }
     else {
         setInterval(function () {
-            invoke({ method: "read", host: ip_mx840B, port: port }, function (error, result) {
+            invoke({ operation: "read", host: ip_mx840B, port: port }, function (error, result) {
                 if (error)
                     console.log("ERROR:" + error.message);
                 else {

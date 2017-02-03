@@ -58,7 +58,6 @@ namespace mx840Bridge
             try
             {
                 _daqEnvironment = DaqEnvironment.GetInstance();
-               
                 _daqEnvironment.Connect(_deviceToConnect, out problemList);
             }
             catch (Exception ex)
@@ -90,13 +89,34 @@ namespace mx840Bridge
             {
                 _deviceToConnect.ReadSingleMeasurementValueOfAllSignals();
                 List<Signal> signals = _deviceToConnect.GetAllSignals();
-                var message = new SensorMessage() { timestamp = DateTime.Now, readings = new List<SensorReading>() };
+                Dictionary<string, double> dictionary = new Dictionary<string, double>();
                 foreach (var signal in signals)
                 {
-                    message.readings.Add(new SensorReading { sensorName = signal.GetUniqueID(), value = signal.GetSingleMeasurementValue().Value });
+                    dictionary.Add(signal.GetUniqueID(), signal.GetSingleMeasurementValue().Value);
                 }
 
-                return message;
+                var result = new
+                {
+                    dt = DateTime.UtcNow,
+                    sensor1_name = "AnalogIn_Connector1.Signal1",
+                    sensor1_value = dictionary["AnalogIn_Connector1.Signal1"],
+                    sensor2_name = "AnalogIn_Connector1.Signal2",
+                    sensor2_value = dictionary["AnalogIn_Connector1.Signal2"],
+                    sensor3_name = "AnalogIn_Connector2.Signal1",
+                    sensor3_value = dictionary["AnalogIn_Connector2.Signal1"],
+                    sensor4_name = "AnalogIn_Connector2.Signal2",
+                    sensor4_value = dictionary["AnalogIn_Connector2.Signal2"],
+                    sensor5_name = "AnalogIn_Connector3.Signal1",
+                    sensor5_value = dictionary["AnalogIn_Connector3.Signal1"],
+                    sensor6_name = "AnalogIn_Connector3.Signal2",
+                    sensor6_value = dictionary["AnalogIn_Connector3.Signal2"],
+                    sensor7_name = "AnalogIn_Connector4.Signal1",
+                    sensor7_value = dictionary["AnalogIn_Connector4.Signal1"],
+                    sensor8_name = "AnalogIn_Connector4.Signal2",
+                    sensor8_value = dictionary["AnalogIn_Connector4.Signal2"]
+
+                };
+                return result;
             }
             catch (Exception ex)
             {
@@ -114,15 +134,4 @@ namespace mx840Bridge
         
     }
 
-    public class SensorMessage
-    {
-        public DateTime timestamp { get; set; }
-        public List<SensorReading> readings { get; set; }
-    }
-
-    public class SensorReading
-    {
-        public string sensorName { get; set; }
-        public double value { get; set; }
-    }
 }
