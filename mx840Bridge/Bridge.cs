@@ -20,7 +20,7 @@ namespace mx840Bridge
         {
             try
             {
-                Console.WriteLine("Invoke...");
+               // Console.WriteLine("Invoke...");
                 var method = (string)request.operation;
 
                 switch (method)
@@ -84,7 +84,7 @@ namespace mx840Bridge
         }
         public async Task<dynamic> Read()
         {
-            Console.WriteLine("Reading...");
+           // Console.WriteLine("Reading...");
             try
             {
                 _deviceToConnect.ReadSingleMeasurementValueOfAllSignals();
