@@ -94,27 +94,34 @@ namespace mx840Bridge
                 {
                     dictionary.Add(signal.GetUniqueID(), signal.GetSingleMeasurementValue().Value);
                 }
-
+                var dt = DateTime.UtcNow;
                 var result = new
                 {
-                    dt = DateTime.UtcNow,
+                    dt = dt,
                     sensor1_name = "AnalogIn_Connector1.Signal1",
                     sensor1_value = dictionary["AnalogIn_Connector1.Signal1"],
+                    sensor1_dt = dt,
                     sensor2_name = "AnalogIn_Connector1.Signal2",
                     sensor2_value = dictionary["AnalogIn_Connector1.Signal2"],
+                    sensor2_dt = dt,
                     sensor3_name = "AnalogIn_Connector2.Signal1",
                     sensor3_value = dictionary["AnalogIn_Connector2.Signal1"],
+                    sensor3_dt = dt,
                     sensor4_name = "AnalogIn_Connector2.Signal2",
                     sensor4_value = dictionary["AnalogIn_Connector2.Signal2"],
+                    sensor4_dt = dt,
                     sensor5_name = "AnalogIn_Connector3.Signal1",
                     sensor5_value = dictionary["AnalogIn_Connector3.Signal1"],
+                    sensor5_dt = dt,
                     sensor6_name = "AnalogIn_Connector3.Signal2",
                     sensor6_value = dictionary["AnalogIn_Connector3.Signal2"],
+                    sensor6_dt = dt,
                     sensor7_name = "AnalogIn_Connector4.Signal1",
                     sensor7_value = dictionary["AnalogIn_Connector4.Signal1"],
+                    sensor7_dt = dt,
                     sensor8_name = "AnalogIn_Connector4.Signal2",
-                    sensor8_value = dictionary["AnalogIn_Connector4.Signal2"]
-
+                    sensor8_value = dictionary["AnalogIn_Connector4.Signal2"],
+                    sensor8_dt = dt
                 };
                 return result;
             }
