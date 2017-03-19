@@ -1,4 +1,5 @@
 ﻿using Hbm.Api.Common;
+using Hbm.Api.Common.Entities.ConnectionInfos;
 using Hbm.Api.Common.Entities.Problems;
 using Hbm.Api.Common.Entities.Signals;
 using Hbm.Api.QuantumX;
@@ -47,33 +48,75 @@ namespace mx840Bridge
             }
         }
         
-        public async Task<dynamic> Open(string host, int port)
+        public async Task<dynamic> Open(string host, int port, bool isScan = true)
         {
             Console.WriteLine("Opening....");
             port = port == 0 ? 5001 : port;
-            _deviceToConnect = new QuantumXDevice(host);
+            
             List<Problem> problemList = new List<Problem>();
             
             //_daqEnvironment = new DaqEnvironment();
             try
             {
                 _daqEnvironment = DaqEnvironment.GetInstance();
+               // _daqEnvironment.Scan();
+                Console.WriteLine(isScan ? "Scan is enabled" : "Static ip is enabled");
+                if (isScan)
+                    _deviceToConnect = new QuantumXDevice();
+                else
+                    _deviceToConnect = new QuantumXDevice(host);
+                 //host 
                 _daqEnvironment.Connect(_deviceToConnect, out problemList);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Could not open device: Trying to scan device....B");
+                Console.WriteLine("------- Scanning for ip -------");
+            }
+            try
+            {
+                //scan for mx840 dynamic ip 
+                if (isScan)
+                {
+                    Console.WriteLine("Scaning ip stared");
+
+                    //remove all reasources to this and reconnect using scan option
+                    var dataScan = _daqEnvironment.Scan();
+                  
+                    foreach (var item in dataScan)
+                    {
+                        var getIpByScan = (item.ConnectionInfo as EthernetConnectionInfo).IpAddress;
+                        host = getIpByScan;
+                        Console.WriteLine("Found scanned HOST: " + getIpByScan);
+                        (_deviceToConnect.ConnectionInfo as EthernetConnectionInfo).IpAddress = host;
+
+                    }
+                    _daqEnvironment.Disconnect(_deviceToConnect);
+                    _deviceToConnect = new QuantumXDevice(host);
+                    problemList.Clear();
+                    _daqEnvironment.Connect(_deviceToConnect, out problemList);
+                    
+                }
+                   
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Could not open device: " + ex.Message);
+                Console.WriteLine("Could not scan the device : " + ex);
                 throw ex;
             }
-            
-            if (problemList.Count>0)
+
+
+            if (problemList.Count > 0)
             {
                 foreach (var property in problemList)
                 {
                     Console.WriteLine(string.Format("Property: {0}, Value: {1}", property.PropertyName, property.Message));
                 }
-//                throw new Exception("Unable to connect");
+
+                //                throw new Exception("Unable to connect");
             }
+
+
             Console.WriteLine("Reading properties...........");
             foreach (var prop in _deviceToConnect.GetType().GetProperties())
             {

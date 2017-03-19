@@ -1,0 +1,3324 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hbm.Api.Mgc</name>
+    </assembly>
+    <members>
+        <member name="T:Hbm.Api.Mgc.Channels.IMgcChannel">
+            <summary>
+            Interface for additional properties of MgcChannel
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.IMgcChannel.Slot">
+            <summary>
+            Slot to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.IMgcChannel.Position">
+            <summary>
+            Position at slot where channel is located
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.IMgcChannel.AmplifierType">
+            <summary>
+            Amplifier type to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.IMgcChannel.ConnectionBoardType">
+            <summary>
+            Connection board type to which the channel belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Channels.MgcAnalogOutChannel">
+            <summary>
+            Mgc specific implementation of an analog out channel
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Channels.MgcAnalogOutChannel.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the channel among the device to which the channel belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique channel identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogOutChannel.AmplifierType">
+            <summary>
+            The type of the amplifier to which the channel belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogOutChannel.Slot">
+            <summary>
+            The slot number of the device to which the channel belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogOutChannel.Position">
+            <summary>
+            The position within the slot to which the channel belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogOutChannel.ConnectionBoardType">
+            <summary>
+            Type of the connection board to which the channel belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Channels.MgcCanInChannel">
+            <summary>
+            Mgc specific implementation of a can in channel
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Channels.MgcCanInChannel.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the channel among the device to which the channel belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique channel identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcCanInChannel.AmplifierType">
+            <summary>
+            Type of the amplifier to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcCanInChannel.ConnectionBoardType">
+            <summary>
+            Type of the connection board to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcCanInChannel.Slot">
+            <summary>
+            Slot number of the device to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcCanInChannel.Position">
+            <summary>
+            Position within the slot to which the channel belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Channels.MgcDigitalChannel">
+            <summary>
+            MGC specific implementation of a digital channel
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Channels.MgcDigitalChannel.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the channel among the device to which the channel belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique channel identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcDigitalChannel.AmplifierType">
+            <summary>
+            The type of the amplifier to which the channel belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcDigitalChannel.Slot">
+            <summary>
+            The slot number of the device to which the channel belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcDigitalChannel.Position">
+            <summary>
+            The position within the slot to which the channel belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcDigitalChannel.ConnectionBoardType">
+            <summary>
+            Type of the connection board to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcDigitalChannel.Pin">
+            <summary>
+            Digital pin that is mapped to this channel
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Channels.MgcAnalogInChannel">
+            <summary>
+            Channel to which a sensor can be connected
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Channels.MgcAnalogInChannel.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the channel among the device to which the channel belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique channel identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogInChannel.AmplifierType">
+            <summary>
+            Type of the amplifier to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogInChannel.ConnectionBoardType">
+            <summary>
+            Type of the connection board to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogInChannel.Slot">
+            <summary>
+            Slot number of the device to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcAnalogInChannel.Position">
+            <summary>
+            Position within the slot to which the channel belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Channels.MgcVirtualChannel">
+            <summary>
+            Channel to which no sensor can be connected. This could be a calculated channel for example.
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Channels.MgcVirtualChannel.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the channel among the device to which the channel belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique channel identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcVirtualChannel.AmplifierType">
+            <summary>
+            Type of the amplifier to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcVirtualChannel.ConnectionBoardType">
+            <summary>
+            Type of the connection board to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcVirtualChannel.Slot">
+            <summary>
+            Slot number of the device to which the channel belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Channels.MgcVirtualChannel.Position">
+            <summary>
+            Position within the slot to which the channel belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Connectors.IMgcConnector">
+            <summary>
+            Interface for additional properties of MgcConnector
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.IMgcConnector.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.IMgcConnector.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.IMgcConnector.AmplifierType">
+            <summary>
+            Type of amplifier which is plugged into the slot mentioned by <see cref="P:Hbm.Api.Mgc.Connectors.IMgcConnector.Slot"/>
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.IMgcConnector.ConnectionBoardType">
+            <summary>
+            Connection board type to which the connector belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Connectors.MgcAnalogInConnector">
+            <summary>
+            Mgc specific implementation of an analog in connector
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Connectors.MgcAnalogInConnector.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the connector among the device to which the connector belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect. The method implementation has to throw an cref="System.InvalidOperationException"&gt;, if no unique connector id is set.</remarks>
+            <returns>Unique connector identification on the device</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown, if it does not contain a value.</exception>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogInConnector.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogInConnector.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogInConnector.AmplifierType">
+            <summary>
+            Type of amplifier which is plugged into the slot mentioned by <see cref="P:Hbm.Api.Mgc.Connectors.MgcAnalogInConnector.Slot"/>
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogInConnector.ConnectionBoardType">
+            <summary>
+            Connection board type to which the connector belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector">
+            <summary>
+            Mgc specific implementation of an analog out connector
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the connector among the device to which the connector belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect. The method implementation has to throw an cref="System.InvalidOperationException"&gt;, if no unique connector id is set.</remarks>
+            <returns>Unique connector identification on the device</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown, if it does not contain a value.</exception>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector.AmplifierType">
+            <summary>
+            Type of amplifier which is plugged into the slot mentioned by <see cref="P:Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector.Slot"/>
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector.ConnectionBoardType">
+            <summary>
+            Connection board type to which the connector belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Connectors.MgcCanConnector">
+            <summary>
+            Mgc specific implementation of a can connector
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Connectors.MgcCanConnector.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the connector among the device to which the connector belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect. The method implementation has to throw an cref="System.InvalidOperationException"&gt;, if no unique connector id is set.</remarks>
+            <returns>Unique connector identification on the device</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown, if it does not contain a value.</exception>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcCanConnector.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcCanConnector.Position">
+            <summary>
+            MGC supports 2 different CAN ports with different baud rates.
+            Position is either 1 or 2
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcCanConnector.AmplifierType">
+            <summary>
+            Type of amplifier which is plugged into the slot mentioned by <see cref="P:Hbm.Api.Mgc.Connectors.MgcCanConnector.Slot"/>
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcCanConnector.ConnectionBoardType">
+            <summary>
+            Connection board type to which the connector belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Connectors.MgcDigitalConnector">
+            <summary>
+            MGC specific implementation of a digital connector
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Connectors.MgcDigitalConnector.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the connector among the device to which the connector belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect. The method implementation has to throw an cref="System.InvalidOperationException"&gt;, if no unique connector id is set.</remarks>
+            <returns>Unique connector identification on the device</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown, if it does not contain a value.</exception>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcDigitalConnector.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcDigitalConnector.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcDigitalConnector.AmplifierType">
+            <summary>
+            Type of amplifier which is plugged into the slot
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcDigitalConnector.ConnectionBoardType">
+            <summary>
+            Connection board type to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcDigitalConnector.Pin">
+            <summary>
+            Digital pin that is mapped to this connector
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Connectors.MgcVirtualConnector">
+            <summary>
+            Represents a connector to which no sensor can be attached (e.g. a connector that houses calculated channels).
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Connectors.MgcVirtualConnector.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the connector among the device to which the connector belongs.
+            </summary>
+            <remarks>This information should be retrieved during scan or connect. The method implementation has to throw an cref="System.InvalidOperationException"&gt;, if no unique connector id is set.</remarks>
+            <returns>Unique connector identification on the device</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown, if it does not contain a value.</exception>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcVirtualConnector.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcVirtualConnector.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcVirtualConnector.AmplifierType">
+            <summary>
+            Type of amplifier which is plugged into the slot mentioned by <see cref="P:Hbm.Api.Mgc.Connectors.MgcVirtualConnector.Slot"/>
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Connectors.MgcVirtualConnector.ConnectionBoardType">
+            <summary>
+            Connection board type to which the connector belongs
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Core.CommunicationManager">
+            <summary>
+            Handles all communications with a certain MGC device via command interface
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.#ctor(Hbm.Api.Mgc.MgcDevice,System.Int32)">
+            <summary>
+            Creates new instance of this class
+            </summary>
+            <param name="mgc">Device to connect to</param>
+            <param name="timeout">Timeout in ms</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.Finalize">
+            <summary>
+            Finalizer. Cleans up all resources
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ConnectToDevice">
+            <summary>
+            Connect to certain device
+            </summary>
+            <remarks>The device to connect to is specified through constructor of the class</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.Disconnect">
+            <summary>
+            Disconnect from device
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.InitDevice">
+            <summary>
+            Initializes the device with default parameters, used by this driver
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SendMessage(System.String)">
+            <summary>
+            Sends commmand sequences directly to the device
+            </summary>
+            <param name="message">Command to be send</param>
+            <returns>Response of the device</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SendMessage(System.String,System.Int32)">
+            <summary>
+            Sends commmand directly to the device and 
+            returns given number of bytes read from device
+            </summary>
+            <param name="message">Command to be send</param>
+            <param name="numberOfBytesToReceive">Number of bytes to receive from device</param>
+            <returns> The demanded number of bytes saved in global _binaryBuffer</returns>
+            <remarks>Due to performance issues we do not allocate new byte buffer 
+            for return values each time the function is called!
+            We use _binaryBuffer here!!! So assert, that e.g.SendMessage(string) function is not called until the binary response
+            of this function is evaluated - since SendMessage(string) also uses _binaryBuffer !!!!</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SendMessageWithoutReply(System.String)">
+            <summary>
+            Sends a command directly to the device, without waiting for an answer
+            </summary>
+            <param name="message">Command to be send</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReceiveReply">
+            <summary>
+            Receives the answer of a priviously send command
+            </summary>
+            <returns>Answer from device</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReadDeviceInfo">
+            <summary>
+            Read firmware- and hardware version etc. from the connected device
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReadTimeSource">
+            <summary>
+            Reads the <see cref="T:Hbm.Api.Common.Entities.TimeSources.TimeSource"/> of the connected device
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReadNtpInfo(System.String@,System.Double@,System.String@)">
+            <summary>
+            Reads the NTP synchronization information and parses the relevant parts
+            </summary>
+            <param name="serverIpAddress">IP address of the used NTP server</param>
+            <param name="offsetInMs">Offset between time synchronization source and device time in ms, see<see cref="F:System.Double.MaxValue"/> if offset can not be determined</param>
+            <param name="infoString">Comma seperated standard NTP qualitiy infos: "remote, refid, st, t, when, poll, reach, delay, offset, jitter"</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReadSyncMode">
+            <summary>
+            Reads the synchronisation mode of the device
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSlotNumbers">
+            <summary>
+            Get the list of slotnumbers from the connected device
+            </summary>
+            <returns>returns all slots of the device</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SelectSlot(System.Int32)">
+            <summary>
+            Select the given slot on the connected device
+            </summary>
+            <param name="slotNumber">slot to select</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetConnectorNumbersOfSelectedSlot">
+            <summary>
+            Get the list of connectornumbers of the given slot number
+            </summary>
+            <returns>List of connectornumbers of the current selected slot</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SelectConnectorOfSelectedSlot(System.Int32)">
+            <summary>
+            Selects the given connector under the currently selected slot
+            </summary>
+            <param name="connectorNumber">Connector to select</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetConnectionBoardTypeOfSelectedSlot(System.Int32)">
+            <summary>
+            Returns the connection board type of the currently selected slot
+            </summary>
+            <param name="connectionBoardPosition">0=first position (directly connected to the amplifier board), 1= position beside the amplifier board(e.g. for ML78, which supports two connection boards in parallel)</param>
+            <returns><c>ConnectionBoardType</c> of selected slot/connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetAmplifierTypeOfSelectedSlot">
+            <summary>
+            Returns the amplifier type of the currently selected slot
+            </summary>
+            <returns><c>AmplifierType</c> of selected slot/connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ActivateTEDS(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector)">
+            <summary>
+            Reloads an already loaded (during connect) connector.
+            This may be necessary when TEDS were activated and so the settings of an existing connector 
+            have been changed.
+            We have to UPDATE the settings of the existing objects only!!
+            </summary>
+            <param name="connectorOnWhichToActivateTEDs"></param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetConnectors">
+            <summary>
+            Returns all connectors of the device
+            </summary>
+            <returns>List of connectors of current device</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetTedsStatusOfSelectedChannel(Hbm.Api.Mgc.Channels.IMgcChannel)">
+            <summary>
+            Returns the TEDS status. Actually the TID will be read to decide whether a TEDS is connected or not.
+            </summary>
+            <param name="channel">Channel for which the status will be determined</param>
+            <returns>DeviceStatus with ChannelTedsStatus</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetErrorStatusOfSelectedChannel(Hbm.Api.Common.Entities.Channels.Channel)">
+            <summary>
+            Reads the error status of the selected channel form the device
+            </summary>
+            <param name="channel">Channel from which to get the error status</param>
+            <returns>DeviceErrorStatus object in case of an error for the given channel or null, if there is no error for the given channel</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignConnector(Hbm.Api.Common.Entities.Connectors.Connector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the properties of the given connector (and all its subcomponents like sensor, signals etc)
+            to the device
+            </summary>
+            <param name="connectorToAssign">Connector whose sensor and scaling settings already have been checked.</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCanInChannel(Hbm.Api.Mgc.Channels.MgcCanInChannel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the properties of the given channel (and all its subcomponents like sensor, signal etc)
+            to the device
+            </summary>
+            <param name="mgcCanInChannel">Channel whose settings should be assigned</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignSignal(Hbm.Api.Common.Entities.Signals.Signal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns all properties of a signal 
+            (VirtualSignal:  Name, SampleRate, SynchronMode)
+            (AnalogInSignal: Name, SampleRate, SynchronMode, Filter )
+            </summary>
+            <param name="signalToAssign">Signal to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignSynchronMode(Hbm.Api.Common.Entities.Signals.Signal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns SynchronMode 
+            </summary>
+            <param name="signalToAssign">Signal to assign SynchronMode to</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignDigitalDirection(Hbm.Api.Mgc.Connectors.MgcDigitalConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns DirectionType
+            </summary>
+            <param name="mgcDigitalConnector">Connector that holds the <see cref="T:Hbm.Api.Common.Enums.DirectionType"/></param> 
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignSensorToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns sensor settings (including scaling settings) to the previously selected analogInConnector
+            </summary>
+            <param name="mgcAnalogInConnector">Connector whose sensor settings should be assigned</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCanSensorToSelectedConnector(Hbm.Api.SensorDB.Entities.Sensors.CanBusSensor,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns a complete CAN Bus Sensor (including scaling settings etc.)
+            </summary>
+            <param name="mgcCanBusSensor">CAN Bus Sensor to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.BeginCanParameterization(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Starts writing CAN parameters
+            </summary>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.EndCanParameterization(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Ends writing CAN parameters
+            </summary>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCanConnectorSettingsToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcCanConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns all settings of the given can connector except the channels
+            </summary>
+            <param name="mgcCanConnector">Connector whose settings should be assigned</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCanIsListenOnlyOfSelectedConnector(Hbm.Api.Mgc.Connectors.MgcCanConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the IsListenOnly flag of the given CanConnector
+            </summary>
+            <param name="mgcCanConnector">CanConnector whose IsListenOnly flag should be set</param>
+            <param name="problemsDuringAssign">Problems that occurred during assing</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCanBusBaudRateOfSelectedConnector(Hbm.Api.Mgc.Connectors.MgcCanConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the bitrate of the given CanConnector
+            </summary>
+            <param name="mgcCanConnector">CanConnector whose bitrate should be assigned</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignEngineeringUnitToSelectedConnector(Hbm.Api.Common.Entities.Channels.Channel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns engineering unit to previously selected analogInConnector
+            </summary>
+            <param name="mgcChannel">Channel that holds the unit that should be assigned</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignEngineeringUnitToSelectedConnector(Hbm.Api.Common.Entities.Channels.IUnit,System.String,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns engineering unit to channels that do not support a sensor and scaling object.
+            At present this is used for virtual-, digital-and analogOut-channels
+            </summary>
+            <param name="mgcChannel">Channel, whose unit should be set</param>
+            <param name="unit">Unit that should be assigned to the given channel</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignSignalNameToSelectedConnectorChannelAndSignal(Hbm.Api.Common.Entities.Signals.Signal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            MGC does not support connectornames or channelnames.
+            So the signal name is the leading property to assign the name to signal and channel
+            </summary>
+            <param name="mgcSignal">Signal of MGC </param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignFilterToSelectedAnalogInConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the filter of the current selected connector(Channel/Signal/Filter)
+            If given filtertype (Bessel,Butterworth etc.) or filterfrequency doesn't fit, it will 
+            be adapted to best fitting settings and the problemsDuringAssign list will be accordingly expanded 
+            </summary>
+            <param name="mgcAnalogInConnector">Connector to which to assign the filter settings</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignFilterToSelectedAnalogOutConnector(Hbm.Api.Mgc.Signals.MgcAnalogOutSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the filter of the given signal to an analog out connector
+            </summary>
+            <param name="mgcAnalogOutSignal">Signal that holds the filter that should be assigned</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssigngOutputScalingToSelectedAnalogOutConnector(Hbm.Api.Mgc.Signals.MgcAnalogOutSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns an analog output scaling 
+            </summary>
+            <param name="mgcAnalogOutSignal">Signal that contains the scaling</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignInputSignalReferenceToSelectedAnalogOutConnector(Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the analog out mode and the input signal reference of a given analog out connector
+            </summary>
+            <param name="mgcAnalogOutConnector">Analog out connector to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignZeroToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns zero offset and zero target to previously selected analogInConnector
+            </summary>
+            <param name="mgcAnalogInConnector">Connector to which to assign the zero settings</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignAutoCalibrationModeToSelectedChannel(Hbm.Api.Mgc.Channels.MgcAnalogInChannel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Enables or disables auto calibration for given channel
+            </summary>
+            <param name="mgcAnalogInChannel">Channel to enable or disable auto calibration</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignSyncMode(Hbm.Api.Common.Enums.SyncModeType)">
+            <summary>
+            Assigns the trigger operation mode that is used to synchronize a measurement between various MGC devices
+            </summary>
+            <param name="syncMode">Trigger operation mode to assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignTimeSource(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns the <see cref="T:Hbm.Api.Common.Entities.TimeSources.TimeSource"/> to the device
+            </summary>
+            <param name="problemsDuringAssign"></param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SetDigitalIO(Hbm.Api.Mgc.Signals.MgcDigitalSignal,Hbm.Api.Common.Enums.DigitalValueType)">
+            <summary>
+            Sets the digital output value of a certain signal to the given value
+            </summary>
+            <param name="digitalSignal">Digital out signal to set to given value</param>
+            <param name="value">Value to set</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SetAnalogOut(Hbm.Api.Mgc.Signals.MgcAnalogOutSignal,System.Decimal)">
+            <summary>
+            Sets the analog output value of a certain signal to the given value
+            </summary>
+            <param name="analogOutSignal">Analog out signal to set to given value</param>
+            <param name="value">Value to set (-10..10)</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SetChannelActivationOfSelectedChannel(Hbm.Api.Mgc.Channels.IMgcChannel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Enables or disables the given channel according to its "IsActivated" property.
+            At the moment this is only possible for CanInChannels!
+            </summary>
+            <param name="mgcChannel">Channel that should be enabled/disabled</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SetAnalogOutSourceSignal(Hbm.Api.Common.Entities.Channels.IInputSignalReference,Hbm.Api.Mgc.Signals.IMgcSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Sets a given signal as source signal for an analog out channel
+            </summary>
+            <param name="analogOutChannel">Analog out channel to which the source signal should be linked</param>
+            <param name="sourceSignal">Signal to link to analog out channel</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SetShuntOfSelectedConnector(Hbm.Api.Mgc.Connectors.IMgcConnector,System.Boolean,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Enables or disables shunt for given connector
+            </summary>
+            <param name="connector">Connector to enable or disable shunt</param>
+            <param name="enable">True if shunt should be enabled</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetShuntOfSelectedConnector">
+            <summary>
+            Returns the shunt mode of the selected connector
+            </summary>
+            <returns>Shunt mode</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SetAutoCalibrationOfSelectedChannel(Hbm.Api.Mgc.Channels.IMgcChannel,System.Boolean,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Enables or disables auto calibration for given channel
+            </summary>
+            <param name="channel">Channel to enable or disable auto calibration</param>
+            <param name="enable">True if auto calibration should be enabled</param>
+            <param name="problemsDuringAssign">Problems that occurred during assign</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.RebootDevice(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Reboots the device
+            </summary>
+            <param name="problemsDuringAssign">Warnings and errors that occurred by starting the reboot of the device</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ResetDevice(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Resets the device to its factory default settings.
+            This is done in the same way as CatmanAp does it:
+             - Switch to AB Client process (CIX0)
+             - Stop PC-Card-Recording (STP)
+             - Free link resources (MCS)
+             - Delete parameterset 0 (SCM-1)
+             - Switch back to original process?? (CIX)
+             - loading factory setup for each amplifier (PCSx,SPS0,TDD0)
+             
+              Further for each slot/subslot:
+             - Reset channel name (UserChannelCommment) for each slot/subchannel to "CH_1_"+Slotnumber+"_"+SubchannelNumber)
+             - Suppress cyclical autocalibration (*CAN1)
+             - Write "" into RAM of the amplifier. The status is set to "Ident user") (*TID0)
+             - Set signal Filter to Bessel,5Hz (*SFC142,935)
+            </summary>
+            <param name="problemsDuringAssign">Warnings and errors that occurred during resetting the device</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReadAllAnalogInAndVirtualAndCanInMeasurementValues(System.Collections.Generic.List{Hbm.Api.Common.Entities.Signals.Signal})">
+            <summary>
+            Reads all measurement values of analog in, virtual and can in signals and saves them into the according signal of the given signalList. 
+            Other signal types (e.g. digital signals) will not be updated!
+            </summary>
+            <param name="signalList">Signal list whose analog in signals, virtual and can in signals will be updated with a new measurement value</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReadAllDigitalMeasurementValues(System.Collections.Generic.List{Hbm.Api.Common.Entities.Signals.Signal})">
+            <summary>
+            Reads all measurement values of digital inputs and outputs and saves them into the according signal of the given signalList. 
+            Other signal types (e.g. analog in signals) will not be updated!
+            </summary>
+            <param name="signalList">Signal list whose digital signals will be updated with a new measurement value</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignMeasurementGroups(System.Collections.Generic.List{System.Collections.Generic.List{Hbm.Api.Common.Entities.Signals.Signal}})">
+            <summary>
+            Assigns a measurement group for each signal of the signalLists 
+            and setups the DMP measurement rates for these (up to 3) groups..
+            Each of the signalList in signalLists contains signals that have the same SampleRate...
+            
+            Time channels of the measurement groups are set to NTP (2*32Bit integer, 4byte 2°-32 parts of a second, 4byte seconds since 1.1.1970!
+            </summary>
+            <param name="signalLists">Up to 3 signal lists are supported by MGC</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignRecordingMasksAndSignalType(System.Collections.Generic.List{Hbm.Api.Common.Entities.Signals.Signal},System.Int32)">
+            <summary>
+            Assigns recording mask for data acquisition... 
+            Recording mask is build for each slot seperately and looks similiar to:
+            E.g.: Let following List of Slots and Positions {Slot,Position} be the sorted List of signals to measure:
+            List= {1,1},{1,2},{1,3},{2,2},{2,4} 
+            This list has to generate following sequence to parameterize the DMP:
+            PCS1; SMS1,2,3           //select slot1 and set recording mask to subchannels 1,2 and 3
+            PCS2; SMS2,4             //select slot2 and set recording mask to subchannels 2 and 4
+            ...
+            
+            MCS1,2,17,18            //use slot 1 and 2 (and timechannels1 (17) and timechannel2 (18) for measurement
+            
+            NumberOfDifferentSampleRates is used to activate the various timechannels...
+            </summary>
+            <param name="sortedSignalList">a sorted list of signals (slot/position ascending order)</param>
+            <param name="numberOfDifferentSampleRates">is needed to setup slots for time channels</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.BeginConcurrentStartDaq">
+            <summary>
+            Starts an already prepared, continuous measurement session
+            without waiting for any reply of the device. Use this function in combination with
+            <c>CompleteConcurrentStartDaq</c>
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.EndConcurrentStartDaq">
+            <summary>
+            Ends the concurrent start of data acquisition (initiated via <c>BeginConcurrentStartDaq</c>)
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ReadDaqValues">
+            <summary>
+            Updates the circular buffer of all signals that have been prepared for measurement
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.StopDaq">
+            <summary>
+            Stops a started, continuous data acquisition
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSupportedSampleRates">
+            <summary>
+            Returns a list of supported sample rates for the currently selected connector
+            </summary>
+            <returns>List of sample rates</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSupportedFilterFrequenciesOfSelectedConnector(Hbm.Api.Common.Entities.Filters.Filter)">
+            <summary>
+            Returns a list of supported filter frequencies for a given filter
+            </summary>
+            <param name="filter">Filter</param>
+            <returns>List of supported frequencies for given filter</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetMinValue(System.Int32,System.Int32)">
+            <summary>
+            Returns the minimum measurement value for sensor of the given slot and position
+            </summary>
+            <param name="slot">Slot at which the sensor is located</param>
+            <param name="position">Position under the slot at which the sensor is located</param>
+            <returns>Minimum value</returns>
+            <remarks>There has to be a calculated channel that calculates the minimum value!</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetMaxValue(System.Int32,System.Int32)">
+            <summary>
+            Returns the maximum measurement value for sensor of the given slot and position
+            </summary>
+            <param name="slot">Slot at which the sensor is located</param>
+            <param name="position">Position under the slot at which the sensor is located</param>
+            <returns>Maximum value</returns>
+            <remarks>There has to be a calculated channel that calculates the maximum value!</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetPeakToPeakValue(System.Int32,System.Int32)">
+            <summary>
+            Returns the peak to peak measurement value for sensor of the given slot and position
+            </summary>
+            <param name="slot">Slot at which the sensor is located</param>
+            <param name="position">Position under the slot at which the sensor is located</param>
+            <returns>Peak to peak value</returns>
+            <remarks>There has to be a calculated channel that calculates the peak to peak value!</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ClearPeakValue(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Clears the peak values of the given slot and position
+            </summary>
+            <param name="slot">Slot at which the sensor is located</param>
+            <param name="position">Position under the slot at which the sensor is located</param>
+            <param name="clearMin">True, if minimum value should be cleared</param>
+            <param name="clearMax">True, if maximum value should be cleared</param>
+            <param name="clearPeakToPeak">True, if peak to peak value should be cleared</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.HoldPeakValue(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Freezes the current peak value of the given slot and position
+            </summary>
+            <param name="slot">Slot at which the sensor is located</param>
+            <param name="position">Position under the slot at which the sensor is located</param>
+            <param name="holdMin">True, if minimum value should be freezed</param>
+            <param name="holdMax">True, if maximum value should be freezed</param>
+            <param name="holdPeakToPeak">True, if peak to peak value should be freezed</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetDigitalOutBitMask">
+            <summary>
+            Returns the digital out status
+            </summary>
+            <returns>Digital out bit mask</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.LoadParameterSet(System.Int32)">
+            <summary>
+            Loads the parameter set with the given number
+            </summary>
+            <param name="parameterSetNumber">Number of the parameter set to load</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetCurrentParameterSetNumber">
+            <summary>
+            Returns the currently loaded parameter set number
+            </summary>
+            <returns>Current parameter set number</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetLimitSwitch(System.Int32)">
+            <summary>
+            Returns the limit switch that corresponds to the given number
+            </summary>
+            <param name="limitSwitchNumber">Number of the limit switch to return</param>
+            <returns>Limit switch according to given limit swicht number</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignLimitSwitch(Hbm.Api.Mgc.MgcLimitSwitch)">
+            <summary>
+            Assigns a given limit swicht
+            </summary>
+            <param name="limitSwitchToSet">Limit switch to assign</param>
+            <returns>True, if assign has been successful</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetDeviceStatus">
+            <summary>
+            Returns the current devices status 
+            </summary>
+            <returns>Device status</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.Dispose">
+            <summary>
+            Releases all used resources
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by this instance
+            </summary>
+            <param name="disposing">Indicates if managed or unmanged resources should be released.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ConvertToAscii(System.String)">
+            <summary>
+            Removes all characters from a string that are not within ascii code range 0..127
+            </summary>
+            <param name="stringToConvertToAscii">String to convert to ASCII </param>
+            <returns>String that contains ASCII characters only</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetNumberOfErrorsFromProblemList(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Returns the number of errors, contained in the given list of problems
+            </summary>
+            <param name="problemList">List of problems to check for errors</param>
+            <returns>Number of errors in given list of problems</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetConnectorOfSelectedSlotAndConnectorNumber(System.Int32,System.Int32,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType)">
+            <summary>
+            Returns a Connnector object filled with all channels, signals, sensor etc.
+            </summary>
+            <param name="currentSlotNumber">Currently selected slotNumber</param>
+            <param name="currentConnectorNumber">Currently selected connectorNumber</param>
+            <param name="currentAmpType">AmplifierType of selected slot/connector</param>
+            <param name="currentConnectionBoardType">ConnectionBoardType of selected slot/connector</param>
+            <returns>Connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSelectedAnalogInConnector(System.Int32,System.Int32,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType)">
+            <summary>
+            Returns an analogInConnector including channel, signals and sensor properties
+            </summary>
+            <param name="currentSlotNumber">Number of already selected slot</param>
+            <param name="currentConnectorNumber">Number of already selected connector</param>
+            <param name="currentAmpType">Amplifier type of selected slot/connector</param>
+            <param name="currentConnectionBoardType">Connection board type of selected slot/connector</param>
+            <returns>AnalogInConnector including channel, signals and sensor properties</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSelectedVirtualConnector(System.Int32,System.Int32,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType)">
+            <summary>
+            Returns a virtualConnector including channel, and signals.
+            </summary>
+            <param name="currentSlotNumber">Number of already selected slot</param>
+            <param name="currentConnectorNumber">Number of already selected connector</param>
+            <param name="currentAmpType">Amplifier type of selected slot/connector</param>
+            <param name="currentConnectionBoardType">Connection board type of selected slot/connector</param>
+            <returns>VirtualConnector including channel, and signal</returns>
+            <remarks>Notice: slot and connector will not be selected again. This has to be done before calling this function!!</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetAnalogInSignalOfSelectedConnector(System.String,System.Int32,System.Int32)">
+            <summary>
+            Returns the filled AnalogInSignal
+            </summary>
+            <returns>AnalogInSignal of selected connector. There is always only ONE signal per connector (MGC)</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetVirtualSignalOfSelectedConnector(System.String,System.Int32,System.Int32)">
+            <summary>
+            Returns the filled VirtualSignal
+            </summary>
+            <returns>VirtualSignal of selected connector. There is always only ONE signal per connector (MGC)</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetFilterOfSelectedConnector">
+            <summary>
+            Gets the filter object of the currently selected connector
+            </summary>
+            <returns>Filter object corresponding to MGC filter settings</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetParameterList(System.String,System.Int32,System.Double)">
+            <summary>
+            Sends a command to the device and returns the answer as list of doubles. Use this function
+            to evaluate more complex queries...
+            </summary>
+            <param name="command">Command to send to device</param>
+            <param name="minLength">Minimum expected answer length</param>
+            <param name="defaultValue">Default value for missing parameters</param>
+            <returns>List of received answer parameters</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetAnalogInSensorOfSelectedConnector(Hbm.Api.Mgc.Enums.AmplifierType)">
+            <summary>
+            Gets the sensor object of currently selected connector
+            </summary>
+            <remarks>Slot and subchannel (position) have to be slected PRIOR to this function call</remarks>
+            <returns>Sensor object corresponding to mgc sensor settings</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetTwoPointScalingOfSelectedConnector">
+            <summary>
+            Reads the two point scaling information from MGC
+            </summary>
+            <returns>TwoPointScaling</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetGageFactorScalingOfSelectedConnector">
+            <summary>
+            Reads the gage factor scaling information from MGC
+            </summary>
+            <returns>Gage factor scaling (if GageFactor is 0 MGC does not use the gage factor scaling !!!) </returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetMaxEngineeringOfSelectedConnector">
+            <summary>
+            Returns the max engineering value of the selected connector
+            </summary>
+            <returns>MaxEngineering</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetEngineeringUnitOfSelectedConnector">
+            <summary>
+            Returns the string representing the engineering unit of the delivered unit number 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSampleRateOfSelectedConnector">
+            <summary>
+            Returns the sample rate of the selected connector (=channel=signal...MGC)
+            </summary>
+            <returns>Sample rate</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetIsListenOnlyOfSelectedCanConnector(System.Int32)">
+            <summary>
+            Returns true, if CAN connector of given port (1 or 2) is NOT sending acknowledges to 
+            confirm received messages or errors.
+            Returns CANBUSISLISTENONLY constant if parameter can not be queried from device.
+            </summary>
+            <param name="port">Port of the CAN connector (1 or 2)</param>
+            <returns>True, if connector is listening only (does NOT send acknowledges)</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetBaudRateOfSelectedCanConnector(System.Int32)">
+            <summary>
+            Returns the sample rate of the selected connector (=channel=signal...MGC)
+            </summary>
+            <param name="port">Port of the can connector (1 or 2)</param>
+            <returns>Baud rate of the given can connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetZeroOfSelectedConnector">
+            <summary>
+            Returns the zero settings of the selected connector (=channel MGC!)
+            </summary>
+            <returns>Zero settings</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetAutoCalibrationOfSelectedConnector">
+            <summary>
+            Returns the auto calibration mode of the selected connector
+            </summary>
+            <returns>Auto calibration mode</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetIndicationScaling">
+            <summary>
+            Returns the indication scaling values needed to calculate the measurement value from
+            binary received value(-7680000 - +7680000)
+            </summary>
+            <returns>Indication scaling</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.FormatLocationHint(System.Int32,System.Int32)">
+            <summary>
+            Returns a formatted location hint that describes the position of a certain connector 
+            </summary>
+            <param name="slot">Slot of the connector</param>
+            <param name="position">Position of the connector</param>
+            <returns>Formatted location hint</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SelectAllUsedSlots">
+            <summary>
+            Select all slots that are supported by the device by just selecting the slots that appear within our object model.
+            (We do not create connectors for ML70 ..ML78...so they will be missed if we would just select all slots of the device here)...
+            </summary>
+            <returns>Answer of the device resulting to </returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetML71ConnectorsOfSelectedSlot(System.Int32,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType)">
+            <summary>
+            Builds the object hierarchy of connectors for an ML71 amplifier (CAN)
+            </summary>
+            <param name="currentSlotNumber">Currently selected slotnumber</param>
+            <param name="currentAmplifierType">Amplifier type of the selected slot </param>
+            <param name="currentConnectionBoardType">Connectionboard type of selected slot</param>
+            <returns>List of connectors of the ML78</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GenerateCanChannelsOfSelectedSlot(Hbm.Api.Mgc.Connectors.MgcCanConnector,Hbm.Api.Mgc.Connectors.MgcCanConnector)">
+            <summary>
+            Generates the can in channels of a ML71 amplifier under the given canBusConnectors (according to the used port (1 or 2) of the channels)
+            </summary>
+            <param name="canBusConnector1">canbus connector 1 of 2 of ML71</param>
+            <param name="canBusConnector2">canbus connector 2 of 2 of ML71</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetRawValueFormat">
+            <summary>
+            Returns the signal type of a selected can signal
+            </summary>
+            <returns>Can signal type</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetCanSignalType">
+            <summary>
+            Returns the signal type of a selected can signal
+            </summary>
+            <returns>Can signal type</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetModeSignalBitSequence">
+            <summary>
+            Returns the bit sequence of a selected can mode signal
+            </summary>
+            <returns>Can mode bit sequence order</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSignalBitSequence">
+            <summary>
+            Returns the bit sequence of a selected can signal
+            </summary>
+            <returns>Can signal bit sequence order</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetML78ConnectorsOfSelectedSlot(System.Int32,Hbm.Api.Mgc.Enums.ConnectionBoardType,Hbm.Api.Mgc.Enums.ConnectionBoardType)">
+            <summary>
+            Builds the object hierarchy of connectors for an ML78 amplifier
+            </summary>
+            <param name="currentSlotNumber">Currently selected slotnumber</param>
+            <param name="firstConnectionBoard">Type of the directly connected connectionboard </param>
+            <param name="secondConnectionBoard">Type of the additional connectionboard, which is mounted at the next slot</param>
+            <returns>List of connectors of the ML78</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GenerateDigitalInputsOfSelectedSlot(System.Int32,System.Int32,Hbm.Api.Mgc.Enums.ConnectionBoardType,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generates the digital inputs of a ML78 amplifier
+            </summary>
+            <param name="slot">Slot at which the amplifier is connected</param>
+            <param name="connector">Connector that is able to measure digital inputs</param>
+            <param name="connectionBoardType">Type of the connection board (actually AP75 only...)</param>
+            <param name="firstPinNumber">First pin that should be used for digital input (depends on the position where the AP75 is connected, first pin is always 1 (not 0!))</param>
+            <param name="lastPinNumber">Last pin that should be used for digital input</param>
+            <param name="group">Unique groupnumber to which the digital inputs of this slot belong</param>
+            <returns>List of digital input connectors of the ML78</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GenerateDigitalOutputsOfSelectedSlot(System.Int32,System.Int32,Hbm.Api.Mgc.Enums.ConnectionBoardType,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generates the digital outputs of a ML78 amplifier
+            </summary>
+            <param name="slot">Slot at which the amplifier is connected</param>
+            <param name="connector">Connector that is able to measure and set digital outputs</param>
+            <param name="connectionBoardType">Type of the connection board (actually AP75 only...)</param>
+            <param name="firstPinNumber">First pin that should be used for digital output (depends on the position where the AP75 is connected, first pin is always 1 (not 0!))</param>
+            <param name="lastPinNumber">Last pin that should be used for digital output</param>
+            <param name="group">Unique groupnumber to which the digital inputs of this slot belong</param>
+            <returns>List of digital out connectors of the ML78</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GenerateAnalogOutputsOfSelectedSlot(System.Int32,System.Int32,System.Int32,Hbm.Api.Mgc.Enums.ConnectionBoardType)">
+            <summary>
+            Generates the analog outputs of a ML78 amplifier
+            </summary>
+            <param name="slot">Slot at which the amplifier is connected</param>
+            <param name="firstConnector">First connector number that should be used</param>
+            <param name="lastConnector">Last connector that should be used</param>
+            <param name="connectionBoardType">Type of the connection board (AP75 or AP78...)</param>
+            <returns>List of analog out connectors of the ML78</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GenerateDigitalChannelName(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generates a name for a digital channel and signal according to given parameters
+            </summary>
+            <param name="slot">Slot at which the digital channel is located</param>
+            <param name="connector">Connector at which the digital channel / digital signal is located (1 is digital in , 2 is digital out!)</param>
+            <param name="pin">Pin of the digital signal</param>
+            <returns>Name of the digital signal / digital channel</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetAnalogOutModeOfSelectedAnalogOutConnector(System.Int32)">
+            <summary>
+            Reads the analog output mode of the selected analog out connector
+            </summary>
+            <param name="connectorNumber">Number of the analog out connector (subchannel 1..10 e.g.)</param>
+            <returns>Analog output mode of selected analog out connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetDigitalOutModeOfSelectedSlot(System.Int32)">
+            <summary>
+            Returns the digital out mode of the selected slot
+            </summary>
+            <param name="pin">Pin number of the digital out signal always (first pin is 1 (not 0!))</param>
+            <returns>Digital out mode of selected slot</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetOutputScalingOfSelectedConnector">
+            <summary>
+            Reads the scaling of the selected analog out connector
+            </summary>
+            <returns>Scaling of the selected analog out connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetFilterOfSelectedAnalogOutConnector">
+            <summary>
+            Gets the filter object of the currently selected analog out connector
+            </summary>
+            <returns>Filter object corresponding to MGC analog out filter settings</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetAllAnalogInAndVirtualAndCanInSignals">
+            <summary>
+            Returns a list of all analog in, virtual and can in signals of the device
+            </summary>
+            <returns>List of all analog in, virtual and can in signals of the device</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.SelectSlotsOfSignals(System.Collections.Generic.List{Hbm.Api.Common.Entities.Signals.Signal})">
+            <summary>
+            Selects all slots used by signals of given signalList
+            </summary>
+            <param name="signalList">Signal list that contains signals whose slot should be slelected</param>
+            <returns>Answer from MGC regarding slot selection</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetMeasvalAndStatusOfSelectedConnectors">
+            <summary>
+            Returns an array of double that contains a measurement value and a status for all selected slots and positions.
+            Format is :
+            measurementValue1,statusValue1,....meausrementValueN, statusValueN
+            </summary>
+            <returns>Array of measurement values and status</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ConvertToMeasurementValueState(System.Double)">
+            <summary>
+            Converts a given value into a MeasurementValueState
+            </summary>
+            <param name="valueToConvert">Value to convert</param>
+            <returns>MeasurementValueState according to given value</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCanConnector(Hbm.Api.Mgc.Connectors.MgcCanConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns all settings of the given CAN connector (including baudrate and all channels...)
+            </summary>
+            <param name="mgcCanConnector">CAN connector</param>
+            <param name="problemsDuringAssign">Problems that occurred during the assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignDigitalConnector(Hbm.Api.Mgc.Connectors.MgcDigitalConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns all settings of the given connector to the digital connector of the device
+            </summary>
+            <param name="mgcDigitalConnector">Digital connector</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignVirtualConnector(Hbm.Api.Mgc.Connectors.MgcVirtualConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns all settings of the given connector to the virtual connector of the device
+            </summary>
+            <param name="mgcVirtualConnector">Virtual connector</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignAnalogInConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns all settings of the given connector to the physical connector of the device
+            </summary>
+            <param name="mgcAnalogInConnector">Analog in connector</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignAnalogOutConnector(Hbm.Api.Mgc.Connectors.MgcAnalogOutConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns an analog out connector
+            </summary>
+            <param name="mgcAnalogOutConnector">Connector to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignAnalogInSignal(Hbm.Api.Mgc.Signals.MgcAnalogInSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns analogInSignal settings (name, sample rate, filter and synchronMode) to the device
+            </summary>
+            <param name="signalToAssign">Analog in signal to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="signalToAssign"/> does not belong to this device</exception>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignVirtualSignal(Hbm.Api.Mgc.Signals.MgcVirtualSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns virtualSignal settings (name, sample rateand synchronMode) to the device
+            </summary>
+            <param name="signalToAssign">Virtual signal to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="signalToAssign"/> does not belong to this device</exception>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignDigitalSignal(Hbm.Api.Mgc.Signals.MgcDigitalSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns digital signal settings (name, sample rate and synchronMode) to the device
+            </summary>
+            <param name="signalToAssign">Digital signal to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignAnalogOutSignal(Hbm.Api.Mgc.Signals.MgcAnalogOutSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns properties of the analog out signal to the device
+            </summary>
+            <param name="signalToAssign">Analog out signal to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCanInSignal(Hbm.Api.Mgc.Signals.MgcCanInSignal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns can in signal settings (name, sample rate and synchronMode) to the device
+            </summary>
+            <param name="signalToAssign">Can in signal to assign</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignGageScalingToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns gage and bridge factor to the device and checks for µm/m as unit (only straingages do support gage scaling!).
+            </summary>
+            <param name="mgcAnalogInConnector">AnalogIn connector that contains the sensor with the scaling</param>
+            <param name="problemsDuringAssign">List of problems that occurred during assignment of the scaling</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignTwoPointScalingToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem},System.Decimal,System.Decimal)">
+            <summary>
+            Function assigns the 2 scaling points 
+            No MaxEngineering or MinEngineering, no EngineerngUnit etc...
+            </summary>
+            <param name="mgcAnalogInConnector">AnalogIn connector that contains the sensor with the scaling</param>
+            <param name="problemsDuringAssign">List of problems that occurred during assignment of the scaling</param>
+            <param name="electricalScalingFactor">Used, if the electrical unit of the MGC differs from the electrical unit of the common sensor (e.g MGC uses mV but sensor uses V => factor=1000)</param>
+            <param name="engineeringFullScale">If engineeringFullScale !=0 this given, precalculated value is used instead of MaxEngineeringRange of the scaling</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignSampleRateToSelectedConnector(Hbm.Api.Common.Entities.Signals.Signal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns sampleRate of the signal of the connector to the device...
+            </summary>
+            <remarks> Until now NO DEVICE SETTINGS will be changed!!! Actually this is just a check for valid sample rates</remarks>
+            <param name="signal">Signal, whose sample rate should be assigned</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignVoltageSensorToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns a voltage sensor 
+            </summary>
+            <param name="mgcAnalogInConnector">Connector to which to assign the sensor</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignCurrentSensorToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns a current sensor 
+            </summary>
+            <param name="mgcAnalogInConnector">Connector to which to assign the sensor</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignBridgeSensorToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns a bridge sensor and its scaling
+            </summary>
+            <param name="mgcAnalogInConnector">Connector to which to assign the sensor</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignThermoSensorToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns a thermocouple sensor 
+            </summary>
+            <param name="mgcAnalogInConnector">Connector to which to assign the sensor</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignFrequencySensorToSelectedConnector(Hbm.Api.Mgc.Connectors.MgcAnalogInConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assigns a frequency sensor 
+            </summary>
+            <param name="mgcAnalogInConnector">Connector to which to assign the sensor</param>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignAutoTimeSource(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assings an AutoTimeSource
+            </summary>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.AssignNtpTimeSource(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Assings a NtpTimeSource
+            </summary>
+            <param name="problemsDuringAssign">Problems that occurred during assignment</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetBestFittingSampleRate(System.Decimal)">
+            <summary>
+            Returns the best fitting sample rate according to given, demanded sample rate
+            </summary>
+            <param name="demandedSampleRate">Sample rate</param>
+            <returns>Best fitting sample rate</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSupportedMgcSensorTypesOfSelectedConnector">
+            <summary>
+            Returns a list of supported mgc sensor types for the selected connector
+            </summary>
+            <returns>List of supported MgcSensorType for selected connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSupportedSensorIdsCodesOfSelectedConnector">
+            <summary>
+            Returns a list of supported mgc sensor ids codes for the selected connector
+            </summary>
+            <returns>List of supported mgc sensor ids codes for selected connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSupportedExcitationIdsCodesOfSelectedConnector">
+            <summary>
+            Returns a list of supported  excitation amplitudes ids codes for given channel
+            </summary>
+            <returns>List of supported excitation amplitudes ids codes</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSupportedExcitationAmplitudesOfSelectedConnector">
+            <summary>
+            Returns a list of supported bridge excitation amplitudes of the selected connector
+            </summary>
+            <returns>List of supported excitation amplitudes</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetSupportedSensorTypes(Hbm.Api.Common.Entities.Channels.Channel)">
+            <summary>
+            Returns a list of possible sensor types for given channel
+            </summary>
+            <param name="channel">Channel to check for valid sensor types</param>
+            <returns>List of possible sensor types</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.ConvertTransducerSensitivityToValue(Hbm.Api.Mgc.Enums.TransducerSensitivity)">
+            <summary>
+            Converst a given TransducerSensitivity enum into a decimal value
+            </summary>
+            <param name="sensitivity">TransducerSensitivityEnum to convert</param>
+            <returns>Decimal value corresponding to given sensitivity</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetBestFittingFilterFrequencyOfSelectedConnector(Hbm.Api.Common.Entities.Filters.Filter)">
+            <summary>
+            Returns best fitting filter frequency for given filter
+            </summary>
+            <param name="demandedFilter">Filter with demanded filter frequency</param>
+            <returns>Best fitting filter frequency for given filter</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.CommunicationManager.GetBestFittingGlitchFilter(System.Double)">
+            <summary>
+            Returns the best fitting glitch filter in ns for a given, demanded filter in ns
+            </summary>
+            <param name="glitchFilter">Filter in ns to find best fitting, supported filter</param>
+            <returns>Best fitting filter in ns!!!</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Core.CommunicationManager.IsNetworkConnectionAlive">
+            <summary>
+            Checks if the device is currently connected with the physical network
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Core.Scanner">
+            <summary>
+            Provides Scan functionalities
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.Scanner.Scan(System.String)">
+            <summary>
+            Scan network for devices
+            </summary>
+            <param name="familyName">Name to scan for</param>
+            <returns>List of found devices</returns>
+            <exception cref="T:Hbm.Api.Scan.Entities.ScanFailedException">Thrown if errors during scan for network adapters occur.</exception>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Core.Scanner.ScanForDevice(System.String,System.String)">
+            <summary>
+            Scan for certain MGC device
+            </summary>
+            <param name="familyName">Name to scan for</param>
+            <param name="deviceName">Name of the device</param>
+            <returns>Device if found, otherwise <c>null</c></returns>
+            <exception cref="T:Hbm.Api.Scan.Entities.ScanFailedException">Thrown if errors during scan for network adapters occur.</exception>
+        </member>
+        <member name="T:Hbm.Api.Mgc.DataConverter.MgcDeviceConverter">
+            <summary>
+            Converter for converting a <see cref="T:Hbm.Api.Scan.Entities.Device"/> into a <see cref="T:Hbm.Api.Mgc.MgcDevice"/>
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.DataConverter.MgcDeviceConverter.Convert(Hbm.Api.Scan.Entities.Device)">
+            <summary>
+            Converts a <see cref="T:Hbm.Api.Scan.Entities.Device"/> into a <see cref="T:Hbm.Api.Mgc.MgcDevice"/>
+            </summary>
+            <remarks>
+            All information which is not available after scan will be added after connecting to the device. 
+            </remarks>
+            <param name="scanDevice">Device entity from Hbm.API.Scan</param>
+            <returns>Instance of MgcDevice, containing the converted data</returns>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.AmplifierType">
+            <summary>
+            MGC amplifier types
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the amplifier type numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.Unknown">
+            <summary>
+            Unknown amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML30">
+            <summary>
+            ML30 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML50">
+            <summary>
+            ML50 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML01">
+            <summary>
+            ML01 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML55">
+            <summary>
+            ML55 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML60">
+            <summary>
+            ML60 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML35">
+            <summary>
+            ML35 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML10">
+            <summary>
+            ML10 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML51">
+            <summary>
+            ML51 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML55S6">
+            <summary>
+            ML55S6 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML38">
+            <summary>
+            ML38 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML85_3">
+            <summary>
+            ML85_3 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML85_1">
+            <summary>
+            ML85_1 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML70">
+            <summary>
+            ML70 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML71">
+            <summary>
+            ML71 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML77">
+            <summary>
+            ML77 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML801">
+            <summary>
+            ML801 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML78">
+            <summary>
+            ML78 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML71S6">
+            <summary>
+            ML71S6 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML460">
+            <summary>
+            ML460 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML74">
+            <summary>
+            ML74 amplifier
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AmplifierType.ML455">
+            <summary>
+            ML455 amplifier
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.AnalogOutBesselFrequency">
+            <summary>
+            MGC supported analog out bessel filter frequencies
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.AnalogOutButterworthFrequency">
+            <summary>
+            MGC supported analog out butterworth filter frequencies
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.AnalogOutMode">
+            <summary>
+            Modus of the analog out channel
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.Fixed0V">
+            <summary>
+            Fixed output of 0V
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.Adjustable">
+            <summary>
+            Output is adjustable -10..10 V
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToSignal">
+            <summary>
+            Output is linked to a signal of the device
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator1">
+            <summary>
+            Output is generated by function generator1
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator2">
+            <summary>
+            Output is generated by function generator2
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator3">
+            <summary>
+            Output is generated by function generator3
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator4">
+            <summary>
+            Output is generated by function generator4
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator5">
+            <summary>
+            Output is generated by function generator5
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator6">
+            <summary>
+            Output is generated by function generator6
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator7">
+            <summary>
+            Output is generated by function generator7
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator8">
+            <summary>
+            Output is generated by function generator8
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator9">
+            <summary>
+            Output is generated by function generator9
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.AnalogOutMode.LinkedToFunctionGenerator10">
+            <summary>
+            Output is generated by function generator10
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.BaudRate">
+            <summary>
+            MGC supported CAN bus baud rates
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the baud rate numbers for the CAN bus returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.ByteOrder">
+            <summary>
+            Byte order of a MGC CAN signal
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ByteOrder.Intel">
+            <summary>
+            Intel byte order (Little Endian, least significant byte is stored at lowest memory position)
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ByteOrder.Motorola">
+            <summary>
+            Motorola byte order (Big Endian,  most significant byte is stored at lowest memory position)
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.ConnectionBoardType">
+            <summary>
+            MGC connection board types
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the connection board type numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.Unknown">
+            <summary>
+            Unknown connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.NoAP">
+            <summary>
+            No connection board (only used for the second, optional connection board of the ML78)
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP01">
+            <summary>
+            AP01 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP506">
+            <summary>
+            AP506 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP08">
+            <summary>
+            AP08 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP14">
+            <summary>
+            AP14 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP18">
+            <summary>
+            AP18 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP09">
+            <summary>
+            AP09 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP801">
+            <summary>
+            AP801 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP809">
+            <summary>
+            AP809 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP835">
+            <summary>
+            AP835 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP409">
+            <summary>
+            AP409 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP4092">
+            <summary>
+            AP4092 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP810">
+            <summary>
+            AP810 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP814">
+            <summary>
+            AP814 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP71">
+            <summary>
+            AP71 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP72">
+            <summary>
+            AP72 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP75">
+            <summary>
+            AP75 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP77">
+            <summary>
+            Unknown connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP78">
+            <summary>
+            AP78 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP815">
+            <summary>
+            AP815 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP401">
+            <summary>
+            AP401 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP4012">
+            <summary>
+            AP4012 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP836">
+            <summary>
+            AP836 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP460">
+            <summary>
+            AP460 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP801S6">
+            <summary>
+            AP801S6 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP814B">
+            <summary>
+            AP814B connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP801S41">
+            <summary>
+            AP801S41 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP418">
+            <summary>
+            AP418 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP4182">
+            <summary>
+            AP4182 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP17">
+            <summary>
+            AP17 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP01i">
+            <summary>
+            AP01i connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP74">
+            <summary>
+            AP74 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP455">
+            <summary>
+            AP455 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP402">
+            <summary>
+            AP402 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.AP816">
+            <summary>
+            AP816 connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.APTEST">
+            <summary>
+            Test connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.APEINMESS">
+            <summary>
+            Calibration connection board
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ConnectionBoardType.APWRONG">
+            <summary>
+            Wrong connection board (combination amplifier/connection board not valid)
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.DataFormat">
+            <summary>
+            Data format of a MGC CAN signal
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.DataFormat.SignedInt">
+            <summary>
+            Signed integer
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.DataFormat.UnsignedInt">
+            <summary>
+            Unsigned integer
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.DataFormat.Float">
+            <summary>
+            Float
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.MgcDeviceStatus">
+            <summary>
+            Device status
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.MgcDeviceStatus.NoError">
+            <summary>
+            No problem occurred
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.MgcDeviceStatus.DeviceDependentError">
+            <summary>
+            A device dependent error occurred
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.MgcDeviceStatus.ParameterDefective">
+            <summary>
+            A wrong or unfitting parameter has been sent to the device
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.MgcDeviceStatus.UnknownCommand">
+            <summary>
+            A unknown command has been send to the device
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.DigitalOutMode">
+            <summary>
+            Modus of the digital signal (valid only for digital signals, whose connector is switched to out direction...)
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.DigitalOutMode.LogicalCombination">
+            <summary>
+            Logical combination of limit value switch and overflow states of other boards
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.DigitalOutMode.Adjustable">
+            <summary>
+            Output is adjustable High or Low
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.DigitalOutMode.LinkedToSignal">
+            <summary>
+            Output is linked to a state of a signal of the device
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.ExcitationAmplitude">
+            <summary>
+            MGC supported excitation amplitudes
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the excitation amplitude numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.FilterCharacteristic">
+            <summary>
+            MGC filter characteristics
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the filter characteristic numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.FilterFrequency">
+            <summary>
+            MGC supported filter frequencies
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the filter frequency numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.FrameFormat">
+            <summary>
+            Frameformat of a MGC CAN sensor
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.FrameFormat.Standard_11BitID">
+            <summary>
+            Standard frame format using 11 bits for ID
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.FrameFormat.Extended_29BitID">
+            <summary>
+            Extended frame format using 29 bits for ID
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.InputType">
+            <summary>
+            Input types
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.LimitSwitchOperatingDirection">
+            <summary>
+            MGC limit switch operation directions
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            returned by the query language of the device.
+            </remarks>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.LimitSwitchOperatingDirection.Off">
+            <summary>
+            Limit swicht is not evaluated
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.LimitSwitchOperatingDirection.AboveLimit">
+            <summary>
+            Limit switch triggers above a certain value
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.LimitSwitchOperatingDirection.BelowLimit">
+            <summary>
+            Limit switch triggers below a certain value
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.LimitSwitchOperatingDirection.InBand">
+            <summary>
+            Limit switch triggers within a given bandwidth
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.LimitSwitchOperatingDirection.OutOfBand">
+            <summary>
+            Limit switch triggers above a given bandwidth
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.ModeSignalByteOrder">
+            <summary>
+            Byte order of a mode signal of a MGC CAN signal
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ModeSignalByteOrder.Intel">
+            <summary>
+            Intel byte order (Little Endian, least significant byte is stored at lowest memory position)
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.ModeSignalByteOrder.Motorola">
+            <summary>
+            Motorola byte order (Big Endian,  most significant byte is stored at lowest memory position)
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.SampleRate">
+            <summary>
+            MGC supported sample rates
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the sample rate numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.MgcSensorType">
+            <summary>
+            MGC sensor types
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the sensor type numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.SignalType">
+            <summary>
+            Signal types of a MGC CAN siganl
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.SignalType.StandardSignal">
+            <summary>
+            Standard signal
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.SignalType.ModeSignal">
+            <summary>
+            Mode signalg
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.SignalType.ModeDependentSignal">
+            <summary>
+            Mode dependentSignal
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.TransducerSensitivity">
+            <summary>
+            MGC supported transducer sensitivities
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the excitation amplitude numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.TriggerOperationMode">
+            <summary>
+            Trigger operation mode that defines the behavior of a MGC during start of a measurement
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.TriggerOperationMode.StandAlone">
+            <summary>
+            Standalone (device uses no hardware synchronisation with another device)
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.TriggerOperationMode.TriggerSlave">
+            <summary>
+            Slave (device listens for start trigger to start a measurement)
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.Enums.TriggerOperationMode.TriggerMaster">
+            <summary>
+            Master (devices triggers other devices to start a measurement)
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Enums.Wiring">
+            <summary>
+            MGC wiring types
+            </summary>
+            <remarks>
+            The values of the enum items are the same as  
+            the wiring type numbers returned by 
+            the query language of the device.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.MgcIndicationScalingValues">
+            <summary>
+            Values to calculate the measurement value based on a
+            recieved binary value between -7680000 and 7680000. 
+            Measurement value = (binary value/7680000)*InputRange - ZeroPoint.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcIndicationScalingValues.InputRange">
+            <summary>
+            Input range.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcIndicationScalingValues.ZeroPoint">
+            <summary>
+            Display zero value.
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.MgcAdditionalFeatures">
+            <summary>
+            Class that holds all additional features of a MgcDevice.
+            Additional features cover all public functions that are not  
+            predetermined by the abstract functions of the Device class.
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.#ctor(Hbm.Api.Mgc.MgcDevice)">
+            <summary>
+            Constructor 
+            </summary>
+            <param name="mgcDevice">MGC device that supports the additional features</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.SendCommand(System.String)">
+            <summary>
+            Sends a command directly to MGC device and returns the answer of the device as string.
+            Do not use this function for binary access (e.g. to update continuous measurement functions)
+            </summary>
+            <param name="directAccessCommand"></param>
+            <returns>Response of the device to directAccessCommand</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.SendCommandWithoutReply(System.String)">
+            <summary>
+            Sends a command directly to the device, without waiting for an answer
+            </summary>
+            <param name="directAccessCommand">Command to be send</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.ReceiveReply">
+            <summary>
+            Receives the answer of a previously send command
+            </summary>
+            <returns>Answer from device</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.GetDeviceStatus">
+            <summary>
+            Returns the current status of the device
+            </summary>
+            <returns>Status of the device. See <see cref="T:Hbm.Api.Mgc.Enums.MgcDeviceStatus"/></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.GetMinValue(Hbm.Api.Common.Entities.Signals.Signal)">
+            <summary>
+            Gets the minimum value of the given signal
+            </summary>
+            <param name="signal"></param>
+            <returns>Minimum value for given signal</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.GetMaxValue(Hbm.Api.Common.Entities.Signals.Signal)">
+            <summary>
+            Gets the maximum value of the given signal
+            </summary>
+            <param name="signal"></param>
+            <returns>Maximum value for given signal</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.GetPeakToPeakValue(Hbm.Api.Common.Entities.Signals.Signal)">
+            <summary>
+            Gets the peak to peak value of the given signal
+            </summary>
+            <param name="signal"></param>
+            <returns>Maximum value for given signal</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.ClearPeakValues(Hbm.Api.Common.Entities.Signals.Signal,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Clears the peak values (min, max, peak to peak) of the given signal
+            </summary>
+            <param name="signal">Signal that holds the peak values</param>
+            <param name="clearMin">Set to true, if you want to clear the minimum value</param>
+            <param name="clearMax">Set to true, if you want to clear the maximum value</param>
+            <param name="clearPeakToPeak">Set to true, if you want to clear the peak to peak value</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.HoldPeakValues(Hbm.Api.Common.Entities.Signals.Signal,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Holds or enables peak value function of signal
+            </summary>
+            <param name="signal">Signal for which peak should be enabled/disabled</param>
+            <param name="holdMin">True, if min value should be frozen</param>
+            <param name="holdMax">True, if max value should be frozen</param>
+            <param name="holdPeakToPeak">True, if peak to peak value should be frozen</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.GetDigitalOutBitMask">
+            <summary>
+            Reads the digital output port of the PMX device.(16 bit)
+            </summary>
+            <returns>Bitmask of the 16 digital outputs of the PMX </returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.LoadParameterSet(System.Int32)">
+            <summary>
+            Loads and activates given parameter set number
+            </summary>
+            <param name="parameterSetNumber">Parameter set to load (0,1,2,...). 
+            -1 means: Load factory setup into currently active parameter set and activate it.</param>
+            <returns>True, if parameter set exists and has been loaded</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.GetCurrentParameterSetNumber">
+            <summary>
+            Returns the current parameter set number (the one that recently has been loaded)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcAdditionalFeatures.ActivateTEDS(Hbm.Api.Common.Entities.Connectors.Connector)">
+            <summary>
+            Loads and activates TEDs settings at given connector
+            </summary>
+            <param name="connectorAtWhichToActivateTEDS"></param>
+            <returns>True, if TEDs settings could be loaded and activated</returns>
+            <remarks>On success, the sensor object of the given connector will be replaced by an updated version according to TEDs settings</remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.MgcLimitSwitch">
+            <summary>
+            Class that describes a limit switch
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.LimitSwitchNumber">
+            <summary>
+            Number of the limit switch. PMX supports 32 limit switches (1..32)
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.Enabled">
+            <summary>
+            True, if limit switch operation is activated.
+            False, if limit switch if off.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.InputSignal">
+            <summary>
+            Signal whose measurement value is used to evaluate the limit switch
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.OperatingDirection">
+            <summary>
+            Operation direction of the limit switch. 
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.Limit">
+            <summary>
+            Limit (dependent on <c>OperationDirection</c> this may also be used to define the lower band value)
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.Hysteresis">
+            <summary>
+            Hysteresis (dependent on <c>OperationDirection</c> this may also be used to define the band span)
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.ResetBehaviorMask">
+            <summary>
+            Reset behavior (can be used for hysteresis management). Binary mask which is ANDed with all digital
+            inputs. If the result is >0 (true) this limit switch is cleared. 
+            Value range: 0,1,2,4,8,16,...32768 corresponding to the 16 digital inputs of the PMX.
+            The reset behavior can be inverted with <c>InvertResetBehavior</c>. Default setting is 0.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.InvertResetBehaviour">
+            <summary>
+            If true, the defined <c>ResetBehavior</c> is inverted.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcLimitSwitch.IgnoreMeasurementValueStatus">
+            <summary>
+            If true: The status of the measurement value is ignored during evaluation of limit switch status. 
+            If false: Limit switch is only evaluated, if measurement value status is OK. Otherwise limit switch status will be frozen.
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.MgcDevice">
+            <summary>
+            Represents a MGC device
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.#ctor">
+            <summary>
+            Creates new instance of the class
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates a new instance of the class
+            </summary>
+            <param name="ip4Address">IP address of the device</param>
+            <param name="port">Port for connecting the device</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.AssignConnector(Hbm.Api.Common.Entities.Connectors.Connector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the settings of the given connector (including channels, sensor, signals etc.)
+            to the physical connector of the device.
+            The warnings and errors during the assignment process are collected in the list of problems.
+            </summary>
+            <param name="connector">The actual (modified) connector.</param>
+            <param name="problems">The warnings and errors that occurred during the assignment process.</param>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownConnectorException">Thrown if the <paramref name="connector"/> does not belong to this device.</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="connector"/> is <c>null</c>.</exception>
+            <returns>True, if there occurred no error.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.AssignChannel(Hbm.Api.Common.Entities.Channels.Channel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the settings of the given channel (including sensor, signals etc.)
+            to the physical channel of the device.
+            Warnings and errors during assign process are collected in list of problems.
+            </summary>
+            <param name="channel">Existing (modified) channel</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="channel"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if <paramref name="channel"/> does not belong to this device</exception>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.AssignSignal(Hbm.Api.Common.Entities.Signals.Signal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the settings of the given signal
+            to the physical signal of the device.
+            Warnings and errors during assign process are collected in list of problems.
+            </summary>
+            <param name="signal">Existing (modified) signal</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="signal"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="signal"/> does not belong to this device</exception>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.AssignSensor(Hbm.Api.Common.Entities.Channels.Channel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the sensor settings of the given channel to the physical channel
+            of the device.
+            Warnings and errors during assign process are collected in list of problems. 
+            </summary>
+            <param name="channel">Existing (modified) channel</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="channel"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if <paramref name="channel"/> does not belong to this device</exception>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.AssignZero(Hbm.Api.Common.Entities.Channels.Channel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the zero settings of the given channel to the physical channel
+            of the device.
+            Warnings and errors during assign process are collected in list of problems. 
+            </summary>
+            <param name="channel">Existing (modified) channel</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="channel"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if <paramref name="channel"/> does not belong to this device</exception>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.AssignAutoCalibrationMode(Hbm.Api.Common.Entities.Channels.Channel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the <see cref="T:Hbm.Api.Common.Enums.AutoCalibrationMode"/> of the given channel to the physical channel
+            of the device.
+            Warnings and errors during assign process are collected in list of problems. 
+            </summary>
+            <param name="channel">Existing (modified) channel</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.AssignTimeSource(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the <see cref="T:Hbm.Api.Common.Entities.TimeSources.TimeSource"/> to the device.
+            Warnings and errors during assign process are collected in list of problems.
+            </summary>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetTimeSourceQuality(System.Double@,System.String@)">
+            <summary>
+            Returns the offset (timespan between synchronization time source and time of device) in ms and a <see cref="T:Hbm.Api.Common.Entities.TimeSources.TimeSource"/> dependent
+            string with further information about the quality of the synchronization.
+            For <see cref="T:Hbm.Api.Common.Entities.TimeSources.NtpTimeSource"/> this string includes the parameters (comma seperated): "remote, refid, st, t, when, poll, reach, delay, offset, jitter"
+            For <see cref="T:Hbm.Api.Common.Entities.TimeSources.PtpTimeSource"/> this string includes the following parmeters (comma seperated): "GrandmasterID, SyncMode, TimeScaleFlags, UtcOffset, UtcOffsetUsed, MasterOffset"
+            </summary>
+            <param name="offsetInMs">Offset to time source in milliseconds, <see cref="F:System.Double.MaxValue"/> if offset can not be determined</param>
+            <param name="quality">TimeSource type dependent information about the synchronization quality.</param>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetSupportedFilterFrequencies(Hbm.Api.Common.Entities.Filters.Filter)">
+            <summary>
+            Get a list of supported filter frequencies for given filter
+            </summary>
+            <param name="filter">Filter, whose possible filter frequencies you want to get</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="filter"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownFilterException">Thrown, if <paramref name="filter"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+            <returns>List of possible filter frequencies</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetSupportedSensorTypes(Hbm.Api.Common.Entities.Channels.Channel)">
+            <summary>
+            Get a list of supported sensor types for a given channel
+            </summary>
+            <param name="channel">Channel, whose possible sensor types you want to get</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="channel"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if <paramref name="channel"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+            <returns>List of possible sensor types</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetSupportedScalingTypes(Hbm.Api.Common.Entities.Channels.Channel)">
+            <summary>
+            Get a list of supported scaling types for given channel
+            </summary>
+            <param name="channel">Channel, whose possible scaling types you want to get</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="channel"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if <paramref name="channel"/> does not belong to this device</exception>
+            <returns>List of possible scaling types</returns>
+            <remarks>Possible scaling types may also depend on the current sensor of the channel!</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetSupportedSampleRates(Hbm.Api.Common.Entities.Signals.Signal)">
+            <summary>
+            Get a list of supported sample rates
+            </summary>
+            <param name="signal">Signal, whose possible sample rates you want to get</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="signal"/> is <c>null</c>.</exception>        
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="signal"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+            <returns>List of possible sample rates</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.ReadSingleMeasurementValue(System.Collections.Generic.List{Hbm.Api.Common.Entities.Signals.Signal})">
+            <summary>
+            Obtains a single measurement value for each given <see cref="T:Hbm.Api.Common.Entities.Signals.Signal"/> without initializing a complete DAQ session.
+            Filter settings will be ignored.
+            The measurement value is internally saved in <see cref="T:Hbm.Api.Common.Entities.Signals.Signal"/> and can be obtained from there by calling <see cref="M:Hbm.Api.Common.Entities.Signals.Signal.GetSingleMeasurementValue"/>.
+            </summary>
+            <param name="measurementSignals">Signals to get measurement values from</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="measurementSignals"/> is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="measurementSignals"/> contains no signals.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+            <remarks>Since the device does not support time stamps for single measurement values, the current time of your 
+            pc is used to generate a time stamp.</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.ReadSingleMeasurementValueOfAllSignals">
+            <summary>
+            Obtains a single measurement value for all <see cref="T:Hbm.Api.Common.Entities.Signals.Signal"/>s of the device without initializing a complete DAQ session.
+            Filter settings will be ignored.
+            The measurement values are internally saved in <see cref="T:Hbm.Api.Common.Entities.Signals.Signal"/> and can be obtained from there by calling <see cref="M:Hbm.Api.Common.Entities.Signals.Signal.GetSingleMeasurementValue"/>.
+            </summary>
+            <remarks>Since the device does not support time stamps for single measurement values, the current time of your 
+            pc is used to generate a time stamp.</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetDigitalIO(Hbm.Api.Common.Entities.Signals.DigitalSignal,Hbm.Api.Common.Enums.DigitalValueType)">
+            <summary>
+            Sets the digital signal according to the given value
+            </summary>
+            <param name="digitalSignal">Digital signal to adjust</param>
+            <param name="value">Value to set</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="digitalSignal"/> is <c>null</c>.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown, if connector of digital signal supports no output operation</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="digitalSignal"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetAnalogOut(Hbm.Api.Common.Entities.Signals.AnalogOutSignal,System.Decimal)">
+            <summary>
+            Sets the analog out signal to the given value
+            </summary>
+            <param name="analogOutSignal">Analog out signal to adjust</param>
+            <param name="value">Value to set</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="analogOutSignal"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="analogOutSignal"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetInputSignalReference(Hbm.Api.Common.Entities.Channels.IInputSignalReference,Hbm.Api.Common.Entities.Device,Hbm.Api.Common.Entities.Signals.Signal,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the reference of an input signal to the given <paramref name="channel"/>. 
+            The reference consists of the input signal's device and the input signal itself.
+            </summary>
+            <param name="channel">(Output) channel, which contains the input signal reference</param>
+            <param name="inputSignalDevice">Device of the input signal</param>
+            <param name="inputSignal">Input signal</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="channel"/>, <paramref name="inputSignalDevice"/> or <paramref name="inputSignal"/> is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">Thrown, if <paramref name="inputSignal"/>is a <see cref="T:Hbm.Api.Common.Entities.Signals.DigitalSignal"/> or an <see cref="T:Hbm.Api.Common.Entities.Signals.AnalogOutSignal"/></exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if <paramref name="channel"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="inputSignal"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetChannelName(Hbm.Api.Common.Entities.Channels.Channel,System.String,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns a channel name to the given <paramref name="channel"/>. 
+            </summary>
+            <remarks>
+            The implementation should call <see cref="M:Hbm.Api.Common.Messaging.MessageBroker.RaiseChannelNameChangedAsync(Hbm.Api.Common.Messaging.ChannelEventArgs)"/> 
+            after a successful assignment of the channel name.
+            </remarks>
+            <param name="channel">Channel, which will be renamed</param>
+            <param name="channelName">New name of the channel</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="channel"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if <paramref name="channel"/> does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetSignalName(Hbm.Api.Common.Entities.Signals.Signal,System.String,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns a signal name to the given <paramref name="signal"/>. 
+            </summary>
+            <remarks>
+            The implementation should call <see cref="M:Hbm.Api.Common.Messaging.MessageBroker.RaiseSignalNameChangedAsync(Hbm.Api.Common.Messaging.SignalEventArgs)"/> 
+            after a successful assignment of the signal name.
+            </remarks>
+            <param name="signal">Signal, which will be renamed</param>
+            <param name="signalName">New name of the signal</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="signal"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownChannelException">Thrown, if channel to which this signal belongs does not belong to this device</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException">Thrown, if device is not connected</exception>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetSlotNumberOfSignal(Hbm.Api.Common.Entities.Signals.Signal)">
+            <summary>
+            Returns slot number of the signal regardless of its type
+            </summary>
+            <param name="signal">Signal whose slot should be returned</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="signal"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="signal"/> does not belong to this device</exception>
+            <returns>Slot number of the signal</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetPositionNumberOfSignal(Hbm.Api.Common.Entities.Signals.Signal)">
+            <summary>
+            Returns position number of the signal, regardless of its type
+            </summary>
+            <param name="signal">Signal whose position should be returned</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="signal"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException">Thrown, if <paramref name="signal"/> does not belong to this device</exception>
+            <returns>Position number of the signal</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetConnectorOfSlotAndPosition(System.Int32,System.Int32)">
+            <summary>
+            Finds the connector that belongs to the given slot and position
+            </summary>
+            <param name="slot">Slot at which the connector is located</param>
+            <param name="position">Position within slot at which the signal is loacted</param>
+            <returns>Connector that has been found at given slot/position or null if no corresponding connector could be found.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetSignalOfSlotAndPosition(System.Int32,System.Int32)">
+            <summary>
+            Finds a signal that belongs to the given slot and position
+            </summary>
+            <param name="slot">Slot at which the signal is located</param>
+            <param name="position">Position within slot at which the signal is located</param>
+            <returns>Signal that has been found at given slot/position or null if no corresponding signal could be found.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetCanBusParameters(Hbm.Api.Common.Entities.Connectors.CanConnector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Sets CanBus specific properties like <see cref="P:Hbm.Api.Common.Entities.Connectors.CanConnector.SupplyVoltage"/>, <see cref="P:Hbm.Api.Common.Entities.Connectors.CanConnector.BitRate"/>, etc. without
+            setting all underlying channels, sensors etc.
+            </summary>
+            <param name="canConnector">CanConnector whose parameters should be set</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetCanChannelActivation(System.Collections.Generic.List{Hbm.Api.Common.Entities.Channels.Channel},System.Boolean,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Activates or deactivates the given list of channels. Only <see cref="T:Hbm.Api.Common.Entities.Channels.CanInChannel"/> and
+            <see cref="T:Hbm.Api.Common.Entities.Channels.CanOutChannel"/> can be activated or deactivated. 
+            </summary>
+            <param name="canChannels">Channels that should be activated or deactivated</param>
+            <param name="activated">True, if given channels should be activated</param>
+            <param name="problems">Warnings and errors that occurred during activation/deactivation process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetUnit(Hbm.Api.Common.Entities.Channels.Channel,System.String,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Assigns the unit of the given channel
+            </summary>
+            <param name="channel">Channel whose unit should be set</param>
+            <param name="unit">Unit to assign</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetDeviceStatusList(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Gets the list of device statuses.
+            </summary>
+            <param name="problems">List of warnings and/or errors that occurred during the process or empty list.</param>
+            <returns>The list of device statuses.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetDeviceStatusList(Hbm.Api.Common.Entities.Channels.Channel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Gets the list of device statuses for the given channel.
+            </summary>
+            <param name="channel">Channel to get the statuses for.</param>
+            <param name="problems">List of warnings and/or errors that occurred during the process or empty list.</param>
+            <returns>The list of device statuses.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetDeviceStatusList(Hbm.Api.Common.Entities.Connectors.Connector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Gets the list of device statuses for the given connector.
+            </summary>
+            <param name="connector">Connector to get the statuses for.</param>
+            <param name="problems">List of warnings and/or errors that occurred during the process or empty list.</param>
+            <returns>The list of device statuses.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetDeviceErrorStatusList(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Gets the list of device error statuses.
+            </summary>
+            <param name="problems">List of warnings and/or errors that occurred during the process or empty list.</param>
+            <returns>The list of device error statuses.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetDeviceErrorStatusList(Hbm.Api.Common.Entities.Connectors.Connector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Gets the list of device error statuses for the given connector.
+            </summary>
+            <param name="connector">Connector to get the error statuses for.</param>
+            <param name="problems">List of warnings and/or errors that occurred during the process or empty list.</param>
+            <returns>The list of device error statuses for the given connector.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetDeviceErrorStatusList(Hbm.Api.Common.Entities.Channels.Channel,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Gets the list of device error statuses for the given channel.
+            </summary>
+            <param name="channel">Channel to get the error statuses for.</param>
+            <param name="problems">List of warnings and/or errors that occurred during the process or empty list.</param>
+            <returns>The list of device error statuses for the given channel.</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.FlashLed(Hbm.Api.Common.Entities.Connectors.Connector,Hbm.Api.Common.Enums.LedFlashMode,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Flashes the LED of the given connector in the given mode/color 
+            </summary>
+            <param name="connector">Connector that should be flashing</param>
+            <param name="mode">Mode/color to use for flashing</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.FlashLed(System.Collections.Generic.List{Hbm.Api.Common.Entities.Connectors.Connector},Hbm.Api.Common.Enums.LedFlashMode,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Flashes the LEDs of the given connectors in the given mode/color 
+            </summary>
+            <param name="connectors">Connectors that should be flashing</param>
+            <param name="mode">Mode/color to use for flashing</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.FlashLed(Hbm.Api.Common.Enums.LedFlashMode,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Flashes the device LED in the given mode/color 
+            </summary>
+            <param name="mode">Mode/color to use for flashing</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetShunt(Hbm.Api.Common.Entities.Connectors.Connector)">
+            <summary>
+            Gets the <see cref="T:Hbm.Api.Common.Enums.ShuntMode"/> for the given connector
+            </summary>
+            <param name="connector">Connector from which to get its <see cref="T:Hbm.Api.Common.Enums.ShuntMode"/></param>
+            <returns><see cref="T:Hbm.Api.Common.Enums.ShuntMode"/> of given connector</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetShunt(System.Collections.Generic.List{Hbm.Api.Common.Entities.Connectors.Connector})">
+            <summary>
+            Gets the <see cref="T:Hbm.Api.Common.Enums.ShuntMode"/> for the given connectors
+            </summary>
+            <param name="connectors">List of connectors from which to get their <see cref="T:Hbm.Api.Common.Enums.ShuntMode"/></param>
+            <returns>List of <see cref="T:Hbm.Api.Common.Enums.ShuntMode"/> of given connectors</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetShunt(Hbm.Api.Common.Entities.Connectors.Connector,Hbm.Api.Common.Enums.ShuntMode,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Sets the configuration of the shunt output of the given connector
+            </summary>
+            <param name="connector">Connector whose shunt output should be set</param>
+            <param name="mode"><see cref="T:Hbm.Api.Common.Enums.ShuntMode"/> for given connector.</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.SetShunt(System.Collections.Generic.List{Hbm.Api.Common.Entities.Connectors.Connector},Hbm.Api.Common.Enums.ShuntMode,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Sets the configurations of the shunt outputs of the given connectors
+            </summary>
+            <param name="connectors">Connectors whose shunt outputs should be set</param>
+            <param name="mode"><see cref="T:Hbm.Api.Common.Enums.ShuntMode"/> for given connectors.</param>
+            <param name="problems">Warnings and errors that occurred during assign process</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.Reset(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Resets the device to its factory default settings. 
+            Caution! After this function has been called, the device will be disconnected.
+            This is necessary because the parameterization of the device changes by 
+            loading the factory defaults and the device therefore will be no longer consistent with the associated object model of the device.
+            (When implementing this function, be sure to disconnect the device and to call <see cref="M:Hbm.Api.Common.Messaging.MessageBroker.RaiseDeviceDisconnectedAsync(Hbm.Api.Common.Messaging.DeviceEventArgs)"/> to signal
+            that the device has been disconnected.) 
+            </summary>
+            <param name="problems">Warnings and errors that occurred during resetting the device</param>
+            <returns><c>true</c> if no error has occurred, otherwise <c>false</c></returns>
+            <remarks>Notice that the device may be unreachable for a certain time and the device is disconnected after the execution of this function.</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.PrepareDaq(System.Collections.Generic.List{Hbm.Api.Common.Entities.Signals.Signal})">
+            <summary>
+            Prepares a continuous measurement session.
+            </summary>
+            <param name="measurementSignals">The signals which will be used for the measurement.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="measurementSignals"/> is <c>null</c>.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.UnknownSignalException"><paramref name="measurementSignals"/> contains a signal that does not belong
+            to this device.</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.PrepareDaqFailedException"> is thrown if there were errors during the preparation of the measurement (e.g.
+            not supported sample rates or to many sample rates for this device)</exception>
+            <exception cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException"> is thrown if connection to the device has been lost (e.g. due to communication error)</exception>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.BeginStartDaq">
+            <summary>
+            Starts an already prepared (via <c>PrepareDaq</c>) continuous measurement session
+            without waiting for any reply of the device. Use this function in combination with
+            <c>CompleteConcurrentStartDaq</c>
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.EndStartDaq">
+            <summary>
+            Ends the concurrent start of data acquisition (initiated via <c>BeginConcurrentStartDaq</c>)
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.ReadDaqValues">
+            <summary>
+            Updates the <c>Signal.CircularBuffer</c>
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.StopDaq">
+            <summary>
+            Stops a running continuous measurement session
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.Connect(System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Connect to the underlying physical device. Must be overridden in derived classes
+            </summary>
+            <param name="problems">List of warnings and errors that occurred during the connect process</param>
+            <returns><c>true</c> if no error occurred, otherwise <c>false</c></returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.Disconnect">
+            <summary>
+            Disconnect from device
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.HandleDeviceNotConnectedException">
+            <summary>
+            Function that disconnects the device in case of an <see cref="T:Hbm.Api.Common.Exceptions.DeviceNotConnectedException"/> that
+            has been thrown by the communication manager
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetChannelTedsStatus(System.Collections.Generic.List{Hbm.Api.Common.Entities.Channels.Channel})">
+            <summary>
+            Returns a list of ChannelTedsStatus for all given channels
+            </summary>
+            <param name="channels">List of channels from which to get the ChannelTedsStatus</param>
+            <returns>List of ChannelTedsStatus one for each given channel</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetChannelOverFlowStatus(System.Collections.Generic.List{Hbm.Api.Common.Entities.Channels.Channel})">
+            <summary>
+            Returns a list of ChannelOverflowStatus (one for each measurable signal) for all given channels
+            </summary>
+            <param name="channels">List of channels from which to get the ChannelOverflowStatus</param>
+            <returns>List of ChannelOverflowStatus (one for each measurable signal)</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetConnectorConnectedStatus(System.Collections.Generic.List{Hbm.Api.Common.Entities.Connectors.Connector})">
+            <summary>
+            Returns a list of ConnectorConnectedStatus (one for each given connector) 
+            </summary>
+            <param name="connectors">List of connectors from which to get ConnectorConnectedStatus</param>
+            <returns>List of ConnectorConnectedStatus (one for each connector)</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetConnectorParamBusyStatus(System.Collections.Generic.List{Hbm.Api.Common.Entities.Connectors.Connector})">
+            <summary>
+            Returns a list of ConnectorParamBusyStatus (one for each given connector) 
+            </summary>
+            <param name="connectors">List of connectors from which to get ConnectorParamBusyStatus</param>
+            <returns>List of ConnectorParamBusyStatus (one for each connector)</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDevice.GetDeviceErrorStatusList(System.Collections.Generic.List{Hbm.Api.Common.Entities.Channels.Channel},System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)">
+            <summary>
+            Gets the list of device error statuses for the given channels.
+            </summary>
+            <param name="channelList">Channels to get the error statuses for</param>
+            <param name="problems">List of warnings and/or errors that occurred during the process or empty list.</param>
+            <returns>The list of device error statuses for the given channels</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcDevice.FamilyName">
+            <summary>
+            Name of the family to which this device belongs
+            </summary>
+            <remarks>This MUST be exactly the same string as in property FamilyName in class <see cref="T:Hbm.Api.Mgc.MgcDeviceFamily"/></remarks>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcDevice.NetAdapter">
+            <summary>
+            Network adapter of the device. Only for internal use
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcDevice.SignalLists">
+            <summary>
+            Returns a list of signal lists, each containing signals with the same sample rate.
+            MGC allows a maximum of 3 different sample rates that may be used at once.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcDevice.AdditionalFeatures">
+            <summary>
+            Additional features of the MGC device.
+            </summary>
+            <remarks>
+            Additional features cover all public functions that are not  
+            predetermined by the abstract functions of the Device class.
+            E.g.:<see cref="M:Hbm.Api.Mgc.MgcAdditionalFeatures.SendCommand(System.String)"/> function of MgcDevice belongs to these
+            additional features of MgcDevice, whereas <see cref="M:Hbm.Api.Mgc.MgcDevice.AssignConnector(Hbm.Api.Common.Entities.Connectors.Connector,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem}@)"/> does NOT belong to
+            additional features, since it is an abstract function of the Device class.
+            </remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.MgcDeviceFamily">
+            <summary>
+            Concrete device family implementation for PMX devices
+            </summary>
+        </member>
+        <member name="F:Hbm.Api.Mgc.MgcDeviceFamily.FAMILY_NAME">
+            <summary>
+            Name of the device family
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.MgcDeviceFamily.Scan">
+            <summary>
+            Scan network for MGC devices
+            </summary>
+            <returns>List of found MGC devices</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcDeviceFamily.FamilyName">
+            <summary>
+            Get name of the device family (ReadOnly)
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.MgcDeviceFamily.IsScanSupported">
+            <summary>
+            Indicates if a device family supports a scan mechanism
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Signals.IMgcSignal">
+            <summary>
+            Interface for additional properties of MgcSignal
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.IMgcSignal.Slot">
+            <summary>
+            The slot number of the device to which the signal belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.IMgcSignal.Position">
+            <summary>
+            The position within the slot to which the signal belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.IMgcSignal.IndicationScaling">
+            <summary>
+            Values to calculate the measurement value based on a
+            recieved binary value between -7680000 and 7680000. 
+            Measurement value = (binary value/7680000)*InputRange - ZeroPoint
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Signals.MgcAnalogInSignal">
+            <summary>
+            Represents a measurement signal delivered by a physical sensor
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Signals.MgcAnalogInSignal.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the signal among the device to which the signal belongs.
+            </summary>
+            <remarks>In case of a streamable signal, this method must return the information used by the streaming to identify the signal on the hardware module.
+            This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique signal identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcAnalogInSignal.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcAnalogInSignal.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcAnalogInSignal.IndicationScaling">
+            <summary>
+            Values to calculate the measurement value based on a
+            recieved binary value between -7680000 and 7680000. 
+            Measurement value = (binary value/7680000)*InputRange - ZeroPoint
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Signals.MgcAnalogOutSignal">
+            <summary>
+            Represents a Mgc specific analog output signal. 
+            </summary>
+            <remarks>
+            This kind of signal cannot be part of a measurement.
+            </remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Signals.MgcAnalogOutSignal.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the signal among the device to which the signal belongs.
+            </summary>
+            <remarks>In case of a streamable signal, this method must return the information used by the streaming to identify the signal on the hardware module.
+            This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique signal identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcAnalogOutSignal.Slot">
+            <summary>
+            The slot number of the device to which the signal belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcAnalogOutSignal.Position">
+            <summary>
+            The position within the slot to which the signal belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcAnalogOutSignal.IndicationScaling">
+            <summary>
+            Values to calculate the measurement value based on a
+            recieved binary value between -7680000 and 7680000. 
+            Measurement value = (binary value/7680000)*InputRange - ZeroPoint
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcAnalogOutSignal.AnalogOutMode">
+            <summary>
+            Mode that describes the source of the analog output
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Signals.MgcCanInSignal">
+            <summary>
+             Mgc specific implementation of a can in signal
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Signals.MgcCanInSignal.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the signal among the device to which the signal belongs.
+            </summary>
+            <remarks>In case of a streamable signal, this method must return the information used by the streaming to identify the signal on the hardware module.
+            This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique signal identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcCanInSignal.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcCanInSignal.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcCanInSignal.IndicationScaling">
+            <summary>
+            Values to calculate the measurement value based on a
+            recieved binary value between -7680000 and 7680000. 
+            Measurement value = (binary value/7680000)*InputRange - ZeroPoint
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Signals.MgcDigitalSignal">
+            <summary>
+             Represents a part of a digital signal (actually one bit of a "native" digital in or digital out signal of the MGC)
+             according to its masked bit.
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Signals.MgcDigitalSignal.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the signal among the device to which the signal belongs.
+            </summary>
+            <remarks>In case of a streamable signal, this method must return the information used by the streaming to identify the signal on the hardware module.
+            This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique signal identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcDigitalSignal.Slot">
+            <summary>
+            The slot number of the device to which the signal belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcDigitalSignal.Position">
+            <summary>
+            The position within the slot to which the signal belongs.
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcDigitalSignal.IndicationScaling">
+            <summary>
+            Values to calculate the measurement value based on a
+            recieved binary value between -7680000 and 7680000. 
+            Measurement value = (binary value/7680000)*InputRange - ZeroPoint
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcDigitalSignal.Pin">
+            <summary>
+            Digital pin that is mapped to this signal
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcDigitalSignal.DigitalOutMode">
+            <summary>
+             Mode that describes the source of the digital output.
+             Used to decide if an additional (time consuming) command has to be sent to mgc
+             before setting a digital out pin to high or low
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Signals.MgcVirtualSignal">
+            <summary>
+             Represents a measurement signal, not delivered by a physical sensor (e.g. a calculated signal)
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Signals.MgcVirtualSignal.GetUniqueID">
+            <summary>
+            Returns a unique string that identifies the signal among the device to which the signal belongs.
+            </summary>
+            <remarks>In case of a streamable signal, this method must return the information used by the streaming to identify the signal on the hardware module.
+            This information should be retrieved during scan or connect.</remarks>
+            <returns>Unique signal identification on the device</returns>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcVirtualSignal.Slot">
+            <summary>
+            Slot to which the connector belongs
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcVirtualSignal.Position">
+            <summary>
+            Position of the connector on the amplifier
+            </summary>
+        </member>
+        <member name="P:Hbm.Api.Mgc.Signals.MgcVirtualSignal.IndicationScaling">
+            <summary>
+            Values to calculate the measurement value based on a
+            recieved binary value between -7680000 and 7680000. 
+            Measurement value = (binary value/7680000)*InputRange - ZeroPoint
+            </summary>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Sorter.SignalSorter">
+            <summary>
+            Helpclass that is used to sort signals (to be able to assign incomming measurement values to the according signal objects)
+            Usage: SignalList.Sort(SignalSorter.CompareSignalBySlotPosition); //sorts SignalList in ascending order (signal of Slot0 Position 0 is first element)
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Sorter.SignalSorter.CompareSignalsBySlotPosition(Hbm.Api.Common.Entities.Signals.Signal,Hbm.Api.Common.Entities.Signals.Signal)">
+            <summary>
+            Compares the position of two given signals (as they appear within a mgc device Slot/position...).
+            Slot0/Position0 is the minimum and SlotN/PositionM the maximum value.
+            </summary>
+            <param name="sig1">Signal 1 to compare with signal 2</param>
+            <param name="sig2">Signal 2 to compare with signal 1</param>
+            <returns>1  if sig1 > sig2, 0  if sig1 = sig2, -1 if sig1 smaller than sig2 </returns>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Utils.LinearInterpolation">
+            <summary>
+            Class that calculates electrical or physical values from a two point scaling
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.LinearInterpolation.CalculateYfromGivenX(Hbm.Api.SensorDB.Entities.Scalings.TwoPointScaling,System.Decimal)">
+            <summary>
+            Returns the engineering (y) unit for a given x (electrical unit)
+            </summary>
+            <param name="twoPointScaling">Scaling that is used to calulate the linear equation</param>
+            <param name="x"></param>
+            <returns>f(x)</returns>
+            <remarks>twoPointScaling has to be valid (no null or x1=x2!!!)</remarks>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.LinearInterpolation.CalculateXfromGivenY(Hbm.Api.SensorDB.Entities.Scalings.TwoPointScaling,System.Decimal)">
+            <summary>
+            Returns the x (electrical unit) for a given engineering (y) unit
+            </summary>
+            <param name="twoPointScaling">Scaling that is used to calulate the inverse function of the linear equation</param>
+            <param name="y"></param>
+            <returns>f-1(y)</returns>
+            <remarks>twoPointScaling has to be valid (no null or x1=x2!!!)</remarks>
+        </member>
+        <member name="T:Hbm.Api.Mgc.Utils.MgcSensorMapper">
+            <summary>
+            Class that contains functions to convert and adapt a given sensor into valid settings for mgc
+            </summary>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.TranslateAndAdaptSensor(Hbm.Api.Mgc.MgcDevice,Hbm.Api.SensorDB.Entities.Sensors.VoltageSensor,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem},System.Int32@,System.Int32@,System.Decimal@)">
+            <summary>
+            Generates ids codes for mgs and problems according to given sensor
+            </summary>
+            <param name="device">Device (just to be able to generate problem entries...)</param>
+            <param name="sensor">Voltage sensor to adapt and translate into ids codes</param>
+            <param name="amplifierType">Amplifier of the connector</param>
+            <param name="connectionBoardType">Connection board of the connector</param>
+            <param name="idsSupportedSensors">Supported sensor codes</param>
+            <param name="idsSupportedExcitations">Supported excitation codes</param>
+            <param name="problemsDuringAssign">List of problems that occurred during the translation</param>
+            <param name="idsChoosenSupply">Choosen active supply code</param>
+            <param name="idsChoosenSensor">Choosen ids code that correspondes to the sensor</param>
+            <param name="scalingFactor">Factor for internal scaling e.g. 1000 for mV instead of V</param>
+            <returns>True, if translation did not produce an error- problem</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.TranslateAndAdaptSensor(Hbm.Api.Mgc.MgcDevice,Hbm.Api.SensorDB.Entities.Sensors.CurrentSensor,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem},System.Int32@,System.Int32@)">
+            <summary>
+            Generates ids codes for mgs and problems according to given sensor
+            </summary>
+            <param name="device">Device (just to be able to generate problem entries...)</param>
+            <param name="sensor">Current sensor to adapt and translate into ids codes</param>
+            <param name="amplifierType">Amplifier of the connector</param>
+            <param name="connectionBoardType">Connection board of the connector</param>
+            <param name="idsSupportedSensors">Supported sensor codes</param>
+            <param name="idsSupportedExcitations">Supported excitation codes</param>
+            <param name="problemsDuringAssign">List of problems that occurred during the translation</param>
+            <param name="idsChoosenSupply">Choosen active supply code</param>
+            <param name="idsChoosenSensor">Choosen ids code that correspondes to the sensor</param>
+            <returns>True, if translation did not produce an error- problem</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.TranslateAndAdaptSensor(Hbm.Api.Mgc.MgcDevice,Hbm.Api.SensorDB.Entities.Sensors.BridgeSensor,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem},System.Int32@,System.Int32@)">
+            <summary>
+            Generates ids codes for mgs and problems according to given sensor
+            </summary>
+            <param name="device">Device (just to be able to generate problem entries...)</param>
+            <param name="sensor">Bridge sensor to adapt and translate into ids codes</param>
+            <param name="amplifierType">Amplifier of the connector</param>
+            <param name="connectionBoardType">Connection board of the connector</param>
+            <param name="idsSupportedSensors">Supported sensor codes</param>
+            <param name="idsSupportedExcitations">Supported excitation codes</param>
+            <param name="problemsDuringAssign">List of problems that occurred during the translation</param>
+            <param name="idsChoosenSupply">Choosen active supply code</param>
+            <param name="idsChoosenSensor">Choosen ids code that correspondes to the sensor</param>
+            <returns>True, if translation did not produce an error</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.TranslateAndAdaptSensor(Hbm.Api.Mgc.MgcDevice,Hbm.Api.SensorDB.Entities.Sensors.ThermoCoupleSensor,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem},System.Int32@,System.Int32@)">
+            <summary>
+            Generates ids codes for mgs and problems according to given sensor
+            </summary>
+            <param name="device">Device (just to be able to generate problem entries...)</param>
+            <param name="sensor">Thermocouple sensor to adapt and translate into ids codes</param>
+            <param name="amplifierType">Amplifier of the connector</param>
+            <param name="connectionBoardType">Connection board of the connector</param>
+            <param name="idsSupportedSensors">Supported sensor codes</param>
+            <param name="idsSupportedExcitations">Supported excitation codes</param>
+            <param name="problemsDuringAssign">List of problems that occurred during the translation</param>
+            <param name="idsChoosenSupply">Choosen active supply code</param>
+            <param name="idsChoosenSensor">Choosen ids code that correspondes to the sensor</param>
+            <returns>True, if translation did not produce an error</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.TranslateAndAdaptSensor(Hbm.Api.Mgc.MgcDevice,Hbm.Api.SensorDB.Entities.Sensors.FrequencySensor,Hbm.Api.Mgc.Enums.AmplifierType,Hbm.Api.Mgc.Enums.ConnectionBoardType,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem},System.Int32@,System.Int32@)">
+            <summary>
+            Generates ids codes for mgs and problems according to given sensor
+            </summary>
+            <param name="device">Device (just to be able to generate problem entries...)</param>
+            <param name="sensor">Frequency sensor to adapt and translate into ids codes</param>
+            <param name="amplifierType">Amplifier of the connector</param>
+            <param name="connectionBoardType">Connection board of the connector</param>
+            <param name="idsSupportedSensors">Supported sensor codes</param>
+            <param name="idsSupportedInputTypes">Supported input type codes</param>
+            <param name="problemsDuringAssign">List of problems that occurred during the translation</param>
+            <param name="idsChosenSensor">Choosen ids code that correspondes to the sensor</param>
+            <param name="idsChosenInputType">Choosen ids code that correspondes to the input type</param>
+            <returns>True, if translation did not produce an error- problem</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetMinEngineeringOfThermoCouple(System.String)">
+            <summary>
+            Returns the minimum engineering range of the given thermocouple sensor type
+            </summary>
+            <param name="thermoCoupleType">Type of thermo couple sensor (B,E,J,K etc.)</param>
+            <returns>Minimum engineering range of given thermo couple</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetMaxEngineeringOfThermoCouple(System.String)">
+            <summary>
+            Returns the maximum engineering range of the given thermocouple sensor type
+            </summary>
+            <param name="thermoCoupleType">Type of thermo couple sensor (B,E,J,K etc.)</param>
+            <returns>Maximum engineering range of given thermo couple</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetThermoCoupleType(System.Int32)">
+            <summary>
+            Returns type of thermocouple according to SAD parameter (prior read from device)
+            </summary>
+            <param name="sadParam1">SAD parameter read from device</param>
+            <returns>Thermocouple type according to SAD parameter</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetImpedance(System.Int32)">
+            <summary>
+            Returns impedance according to SAD parameter (prior read from device)
+            </summary>
+            <param name="sadParam1">SAD parameter read from device</param>
+            <returns>Impedance according to SAD parameter</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.IsInductive(System.Int32)">
+            <summary>
+            Returns true if SAD parameter stands for an inductive sensor (only bridges so far..) 
+            </summary>
+            <param name="sadParam1">SAD parameter (prior read from device)</param>
+            <returns>True if inductive sensor, else false</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetCarrierFrequency(Hbm.Api.Mgc.Enums.AmplifierType)">
+            <summary>
+            Returns the carrier frequency of the given amplifier type. These values are fix.
+            You have to read the data sheets of the amplifiers!
+            </summary>
+            <param name="amplifierType">Type of the amplifier at the current connector</param>
+            <returns>Carrier frequency according to amplifier type</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetSensorTypeFromSAD(System.Int32)">
+            <summary>
+            Returns common sensor type according to given SAD parameter
+            </summary>
+            <param name="sadParam">SAD parameter for which to identfy its sensor typ</param>
+            <returns>SensorType that corresponds to SAD parameter</returns>
+            <exception cref="T:Hbm.Api.Utils.Exceptions.ConversionFailedException">Thrown, if the conversion failed.</exception>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetBridgeType(System.Int32)">
+            <summary>
+            Returns the bridge type according to given SAD parameter (prior read from device)
+            </summary>
+            <param name="sadParam1">SAD saramter</param>
+            <returns>BridgeType according to given SAD parameter</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetWiring(System.Int32,System.Int32)">
+            <summary>
+            Returns the wiring according to the given SAD parameters (prior read from device)
+            </summary>
+            <param name="sadParam0">First SAD parameter</param>
+            <param name="sadParam1">Second SAD parameter</param>
+            <returns>BridgeSensorWiring according to given SAD parameters</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.GetBestFittingExcitationVoltage(System.Decimal,System.Collections.Generic.List{System.Int32},System.Int32@)">
+            <summary>
+            Returns the excitation within the given list of supported excitations, that is best fitting 
+            (less than or equal to) the given original excitation voltage.
+            </summary>
+            <param name="originalExcitationVoltage">Original excitation voltage</param>
+            <param name="supportedExcitations">List of supported ids codes from device</param>
+            <param name="idsChoosenExcitation">ids code of choosen excitation voltage</param>
+            <returns>Best fitting excitation choosen from given list of supported excitations or decimal.MaxValue if no possible excitation could be found</returns>
+        </member>
+        <member name="M:Hbm.Api.Mgc.Utils.MgcSensorMapper.TransformScalingToTwoPointScaling(Hbm.Api.Mgc.MgcDevice,Hbm.Api.SensorDB.Entities.Sensor,System.Collections.Generic.List{Hbm.Api.Common.Entities.Problems.Problem})">
+            <summary>
+            Transforms given ZeroSpan- or Table-scaling(with 2 points) of sensor into 
+            a TwoPoint scaling that is supported by MGC devices
+            </summary>
+            <param name="device">Device under which the sensor is located (just for generating problem-list)</param>
+            <param name="sensor">Sensor with the scaling that should be transformed into a two point scaling</param>
+            <param name="problemsDuringAssign">Problems that occurred during the transformation of the scaling</param>
+            <returns>True, if given scaling has been transformed</returns>
+        </member>
+    </members>
+</doc>
