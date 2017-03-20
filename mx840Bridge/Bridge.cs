@@ -29,7 +29,7 @@ namespace mx840Bridge
                     case "open":
                         var host = (string)request.host;
                         var port = (int)request.port;
-                        Console.WriteLine("HOST:" + host + "Port" + port);
+                        Console.WriteLine("Fixed HOST:" + host + " Fixed Port" + port);
                         return Open(host, port);
                     case "read":
                         return Read();
@@ -54,8 +54,6 @@ namespace mx840Bridge
             port = port == 0 ? 5001 : port;
             
             List<Problem> problemList = new List<Problem>();
-            
-            //_daqEnvironment = new DaqEnvironment();
             try
             {
                 _daqEnvironment = DaqEnvironment.GetInstance();
@@ -68,18 +66,16 @@ namespace mx840Bridge
                  //host 
                 _daqEnvironment.Connect(_deviceToConnect, out problemList);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine("Could not open device: Trying to scan device....B");
-                Console.WriteLine("------- Scanning for ip -------");
+                Console.WriteLine("Could not open device: Trying to scan device...." + ex.Message);
             }
             try
             {
                 //scan for mx840 dynamic ip 
                 if (isScan)
                 {
-                    Console.WriteLine("Scaning ip stared");
-
+                    Console.WriteLine("--------------Scaning ip--------------");
                     //remove all reasources to this and reconnect using scan option
                     var dataScan = _daqEnvironment.Scan();
                   
@@ -104,20 +100,16 @@ namespace mx840Bridge
                 Console.WriteLine("Could not scan the device : " + ex);
                 throw ex;
             }
-
-
+            
             if (problemList.Count > 0)
             {
                 foreach (var property in problemList)
                 {
                     Console.WriteLine(string.Format("Property: {0}, Value: {1}", property.PropertyName, property.Message));
                 }
-
-                //                throw new Exception("Unable to connect");
             }
-
-
-            Console.WriteLine("Reading properties...........");
+            
+            Console.WriteLine("-----------------Reading properties-----------------");
             foreach (var prop in _deviceToConnect.GetType().GetProperties())
             {
                 Console.WriteLine("{0} = {1}", prop.Name, prop.GetValue(_deviceToConnect, null));
